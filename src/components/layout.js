@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,18 +25,18 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div className="container">
+        <br />
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer class="footer">
+          <div class="content has-text-centered">
+            <p>
+              Construido con ❤ por <a href="https://twitter.com/zerquix18">Luis</a>. El código fuente está disponible en <a href="https://github.com/zerquix18/coronavirusrd">Github</a>.
+            </p>
+            <p>
+              Este sitio no está afiliado a Salud Pública ni a ninguna institución. Tampoco pretende hacer recomendaciones o predecir el futuro. Su objetivo principal es el análisis de los datos, cada uno con su fuente.
+            </p>
+          </div>
         </footer>
       </div>
     </>
