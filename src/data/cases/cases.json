@@ -1,0 +1,152 @@
+{
+  "cases":
+  [
+    {
+      "date": "2020/03/01",
+      "total_cases": 1,
+      "total_deaths": 0,
+      "new_cases": 1,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/02",
+      "total_cases": 1,
+      "total_deaths": 0,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/03",
+      "total_cases": 1,
+      "total_deaths": 0,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/04",
+      "total_cases": 1,
+      "total_deaths": 0,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/05",
+      "total_cases": 2,
+      "total_deaths": 0,
+      "new_cases": 2,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/06",
+      "total_cases": 2,
+      "total_deaths": 0,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/07",
+      "total_cases": 2,
+      "total_deaths": 0,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/08",
+      "total_cases": 5,
+      "total_deaths": 0,
+      "new_cases": 3,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/09",
+      "total_cases": 5,
+      "total_deaths": 0,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/10",
+      "total_cases": 5,
+      "total_deaths": 0,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/11",
+      "total_cases": 5,
+      "total_deaths": 0,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/12",
+      "total_cases": 5,
+      "total_deaths": 0,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/13",
+      "total_cases": 11,
+      "total_deaths": 0,
+      "new_cases": 6,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/14",
+      "total_cases": 11,
+      "total_deaths": 0,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/15",
+      "total_cases": 11,
+      "total_deaths": 0,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/16",
+      "total_cases": 21,
+      "total_deaths": 1,
+      "new_cases": 10,
+      "new_deaths": 1
+    },
+    {
+      "date": "2020/03/17",
+      "total_cases": 21,
+      "total_deaths": 1,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/18",
+      "total_cases": 34,
+      "total_deaths": 2,
+      "new_cases": 13,
+      "new_deaths": 1
+    },
+    {
+      "date": "2020/03/19",
+      "total_cases": 34,
+      "total_deaths": 2,
+      "new_cases": 0,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/20",
+      "total_cases": 72,
+      "total_deaths": 2,
+      "new_cases": 38,
+      "new_deaths": 0
+    },
+    {
+      "date": "2020/03/21",
+      "total_cases": 112,
+      "total_deaths": 3,
+      "new_cases": 40,
+      "new_deaths": 1
+    }
+  ]
+}

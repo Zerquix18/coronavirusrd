@@ -29,8 +29,8 @@ const Layout = ({ children }) => {
         <br />
         <main>{children}</main>
         <br />
-        <footer class="footer">
-          <div class="content has-text-centered">
+        <footer className="footer">
+          <div className="content has-text-centered">
             <p>
               Construido con ❤ por <a href="https://twitter.com/zerquix18">Luis</a>. El código fuente está disponible en <a href="https://github.com/zerquix18/coronavirusrd">Github</a>.
             </p>

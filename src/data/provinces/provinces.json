@@ -1,0 +1,453 @@
+{
+  "provinces":
+  [
+    {
+      "name": "Distrito Nacional",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 13,
+          "total_under_investigation": 28,
+          "total_local": 10,
+          "total_deaths": 0,
+          "total_cases": 51
+        }
+      ]
+    },
+    {
+      "name": "Azua",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 1,
+          "total_under_investigation": 1,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 2
+        }
+      ]
+    },
+    {
+      "name": "Baoruco",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "Barahona",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 1,
+          "total_deaths": 0,
+          "total_cases": 1
+        }
+      ]
+    },
+    {
+      "name": "Dajabón",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "Duarte",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 1,
+          "total_under_investigation": 1,
+          "total_local": 2,
+          "total_deaths": 1,
+          "total_cases": 4
+        }
+      ]
+    },
+    {
+      "name": "Elias Piña",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "El Seibo",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "Espaillat",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 1,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 1
+        }
+      ]
+    },
+    {
+      "name": "Independencia",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "La Altagracia",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 4,
+          "total_under_investigation": 2,
+          "total_local": 1,
+          "total_deaths": 0,
+          "total_cases": 7
+        }
+      ]
+    },
+    {
+      "name": "La Romana",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "La Vega",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 3,
+          "total_local": 1,
+          "total_deaths": 0,
+          "total_cases": 4
+        }
+      ]
+    },
+    {
+      "name": "María Trinidad Sánchez",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 2,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 2
+        }
+      ]
+    },
+    {
+      "name": "Monte Cristi",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "Pedernales",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "Peravia",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "Puerto Plata",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 3,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 3
+        }
+      ]
+    },
+    {
+      "name": "Hermanas Mirabal",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 2,
+          "total_deaths": 0,
+          "total_cases": 2
+        }
+      ]
+    },
+    {
+      "name": "Samaná",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 4,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 4
+        }
+      ]
+    },
+    {
+      "name": "San Cristóbal",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 1,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 1
+        }
+      ]
+    },
+    {
+      "name": "San Juan",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 1,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 1,
+          "total_cases": 1
+        }
+      ]
+    },
+    {
+      "name": "San Pedro de Macorís",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 1,
+          "total_under_investigation": 3,
+          "total_local": 0,
+          "total_deaths": 1,
+          "total_cases": 4
+        }
+      ]
+    },
+    {
+      "name": "Sánchez Ramirez",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "Santiago",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 6,
+          "total_under_investigation": 6,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 12
+        }
+      ]
+    },
+    {
+      "name": "Santiago Rodriguez",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "Valverde",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 1,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 1
+        }
+      ]
+    },
+    {
+      "name": "Monseñor Nouel",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 1,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 1
+        }
+      ]
+    },
+    {
+      "name": "Monte Plata",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 1,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 1
+        }
+      ]
+    },
+    {
+      "name": "Hato Mayor",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "San José de Ocoa",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 0,
+          "total_under_investigation": 0,
+          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        }
+      ]
+    },
+    {
+      "name": "Santo Domingo",
+      "cases": [
+        {
+          "date": "2020/03/21",
+
+          "total_imported": 1,
+          "total_under_investigation": 8,
+          "total_local": 1,
+          "total_deaths": 0,
+          "total_cases": 10
+        }
+      ]
+    }
+  ]
+}

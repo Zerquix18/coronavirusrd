@@ -13,6 +13,7 @@
     "gatsby-plugin-react-helmet": "^3.1.24",
     "gatsby-plugin-sharp": "^2.4.13",
     "gatsby-source-filesystem": "^2.1.56",
+    "gatsby-transformer-json": "^2.3.0",
     "gatsby-transformer-sharp": "^2.3.19",
     "highcharts-react-official": "^3.0.0",
     "prop-types": "^15.7.2",
