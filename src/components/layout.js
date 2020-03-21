@@ -28,6 +28,7 @@ const Layout = ({ children }) => {
       <div className="container">
         <br />
         <main>{children}</main>
+        <br />
         <footer class="footer">
           <div class="content has-text-centered">
             <p>
