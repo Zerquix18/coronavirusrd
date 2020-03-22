@@ -7,7 +7,8 @@ import SEO from "../components/seo"
 import MainInfo from '../components/main-info'
 import CaseCharts from '../components/case-charts'
 import ProvinceDistribution from '../components/province-distribution'
-import OriginChart from '../components/origin-chart';
+import OriginChart from '../components/origin-chart'
+import SexChart from '../components/sex-chart'
 
 const IndexPage = () => {
 
@@ -74,6 +75,10 @@ const IndexPage = () => {
       <hr />
 
       <OriginChart provinces={allProvinces} />
+
+      <hr />
+
+      <SexChart sexData={sexData} />
       
     </Layout>
   )
