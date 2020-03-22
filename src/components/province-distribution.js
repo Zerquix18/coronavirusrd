@@ -55,14 +55,18 @@ const ProvinceDistribution = ({ provinces }) => {
           { provincesToDisplay.map((province) => {
             const name = province.name
             const lastUpdate = province.cases[province.cases.length - 1]
+            const secondToLast = province.cases[province.cases.length - 2]
+
+            const newCases = secondToLast ? lastUpdate.total_cases - secondToLast.total_cases : 0
+            const newDeaths = secondToLast ? lastUpdate.total_deaths - secondToLast.total_deaths : 0
 
             total_cases += lastUpdate.total_cases
             total_imported += lastUpdate.total_imported
             total_under_investigation += lastUpdate.total_under_investigation
             total_local += lastUpdate.total_local
-            total_new_cases += lastUpdate.new_cases || 0
+            total_new_cases += newCases
             total_deaths += lastUpdate.total_deaths
-            total_new_deaths += lastUpdate.new_deaths || 0
+            total_new_deaths += newDeaths
 
             return (
               <tr>
@@ -71,9 +75,9 @@ const ProvinceDistribution = ({ provinces }) => {
                 <td>{ lastUpdate.total_imported }</td>
                 <td>{ lastUpdate.total_under_investigation }</td>
                 <td>{ lastUpdate.total_local }</td>
-                <td>{ lastUpdate.new_cases }</td>
+                <td>{ newCases > 0 && newCases }</td>
                 <td>{ lastUpdate.total_deaths }</td>
-                <td>{ lastUpdate.new_deaths }</td>
+                <td>{ newDeaths > 0 && newDeaths }</td>
               </tr>
             )
           })}
