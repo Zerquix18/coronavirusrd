@@ -10,6 +10,7 @@ import ProvinceDistribution from '../components/province-distribution'
 import OriginChart from '../components/origin-chart'
 import SexChart from '../components/sex-chart'
 import NewByDay from '../components/new-by-day'
+import GrowthFactor from "../components/growth-factor"
 
 const IndexPage = () => {
 
@@ -84,6 +85,10 @@ const IndexPage = () => {
       <hr />
 
       <NewByDay cases={allCases} />
+
+      <hr />
+
+      <GrowthFactor cases={allCases} />
       
     </Layout>
   )
