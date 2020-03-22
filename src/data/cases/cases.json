@@ -147,6 +147,13 @@
       "total_deaths": 3,
       "new_cases": 40,
       "new_deaths": 1
+    },
+    {
+      "date": "2020/03/22",
+      "total_cases": 202,
+      "total_deaths": 3,
+      "new_cases": 90,
+      "new_deaths": 0
     }
   ]
 }
