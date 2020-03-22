@@ -47,6 +47,13 @@ const GrowthFactor = ({ cases }) => {
       <h2 className="title">Factor de crecimiento</h2>
       <div className="columns">
         <div className="column is-half">
+          <p>
+            El factor de crecimiento es el factor por el cual una cantidad se multiplica a lo largo del tiempo. La fórmula utilizada es la de todos los casos nuevos del día anterior. Por ejemplo, una cantidad que crece un 7% cada período (en este caso diariamente) tiene un factor de crecimiento de 1,07.</p>
+
+          <p>
+            Un factor de crecimiento superior a 1 indica un aumento, mientras que uno que permanece entre 0 y 1 es un signo de disminución, con lo que la cantidad acaba por convertirse en cero, mientras que un factor de crecimiento constantemente superior a 1 podría indicar un crecimiento exponencial
+          </p>
+
           <HighchartsReact
             highcharts={Highcharts}
             options={growthFactorOptions}
