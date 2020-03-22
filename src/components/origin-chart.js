@@ -6,8 +6,6 @@ import HighchartsReact from 'highcharts-react-official'
 const OriginChart = ({ provinces }) => {
   const [yesterday, setYesterday] = useState(false)
 
-  console.log(yesterday)
-
   let provincesToDisplay = [...provinces]
   if (yesterday) {
     provincesToDisplay = provincesToDisplay.map(province => {

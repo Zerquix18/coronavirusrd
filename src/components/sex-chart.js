@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 
 const SexChart = ({ sexData }) => {
+  const [yesterday, setYesterday] = useState(false)
 
-  const men = sexData[sexData.length - 1].men
-  const women = sexData[sexData.length - 1].women
+  let sexDataToUse = [...sexData]
+  if (yesterday) {
+    sexDataToUse.pop();
+  }
+
+  const men = sexDataToUse[sexDataToUse.length - 1].men
+  const women = sexDataToUse[sexDataToUse.length - 1].women
 
   const options = {
     chart: {
@@ -55,6 +61,18 @@ const SexChart = ({ sexData }) => {
   return (
     <div>
       <h2 className="title">Distribución por sexo</h2>
+
+      <div className="control">
+        <label className="radio">
+          <input type="radio" name="answer" checked={!yesterday} onClick={() => setYesterday(false)} />
+          Hoy
+        </label>
+        <label className="radio">
+          <input type="radio" name="answer" checked={yesterday} onClick={() => setYesterday(true)} />
+          Ayer
+        </label>
+      </div>
+
       <div className="columns">
         <div className="column is-half">
           <HighchartsReact
