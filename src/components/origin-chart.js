@@ -83,11 +83,11 @@ const OriginChart = ({ provinces }) => {
 
       <div className="control">
         <label className="radio">
-          <input type="radio" name="answer" checked={!yesterday} onClick={() => setYesterday(false)} />
+          <input type="radio" name="origin_date" checked={!yesterday} onClick={() => setYesterday(false)} />
           Hoy
         </label>
         <label className="radio">
-          <input type="radio" name="answer" checked={yesterday} onClick={() => setYesterday(true)} />
+          <input type="radio" name="origin_date" checked={yesterday} onClick={() => setYesterday(true)} />
           Ayer
         </label>
       </div>

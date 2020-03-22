@@ -2,8 +2,18 @@ import React, { useState } from 'react'
 
 const ProvinceDistribution = ({ provinces }) => {
   const [filter, setFilter] = useState("")
+  const [yesterday, setYesterday] = useState(false)
 
-  const provincesToDisplay = provinces.filter(province => {
+  let provincesToDisplay = [...provinces]
+  if (yesterday) {
+    provincesToDisplay = provincesToDisplay.map(province => {
+      const cases = [...province.cases]
+      cases.pop();
+      return { ...province, cases }
+    })
+  }
+
+  provincesToDisplay = provincesToDisplay.filter(province => {
     if (filter.trim() === '') {
       return true
     }
@@ -30,7 +40,18 @@ const ProvinceDistribution = ({ provinces }) => {
     <div>
       <h2 className="title">Distribución por provincia</h2>
 
-      <div style={{ maxWidth: '300px'}}>
+      <div className="control">
+        <label className="radio">
+          <input type="radio" name="province_distribution_date" checked={!yesterday} onClick={() => setYesterday(false)} />
+          Hoy
+        </label>
+        <label className="radio">
+          <input type="radio" name="province_distribution_date" checked={yesterday} onClick={() => setYesterday(true)} />
+          Ayer
+        </label>
+      </div>
+
+      <div style={{ maxWidth: '300px' }}>
         <input
           class="input"
           type="text"
