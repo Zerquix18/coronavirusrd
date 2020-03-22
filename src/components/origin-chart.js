@@ -1,19 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 
 const OriginChart = ({ provinces }) => {
+  const [yesterday, setYesterday] = useState(false)
 
-  const totalImported = provinces.reduce((total, current) => {
+  console.log(yesterday)
+
+  let provincesToDisplay = [...provinces]
+  if (yesterday) {
+    provincesToDisplay = provincesToDisplay.map(province => {
+      const cases = [...province.cases]
+      cases.pop();
+      return { ...province, cases }
+    })
+  }
+
+  const totalImported = provincesToDisplay.reduce((total, current) => {
     return total + current.cases[current.cases.length - 1].total_imported
   }, 0)
 
-  const totalUnderInvestigation = provinces.reduce((total, current) => {
+  const totalUnderInvestigation = provincesToDisplay.reduce((total, current) => {
     return total + current.cases[current.cases.length - 1].total_under_investigation
   }, 0)
 
-  const totalLocal = provinces.reduce((total, current) => {
+  const totalLocal = provincesToDisplay.reduce((total, current) => {
     return total + current.cases[current.cases.length - 1].total_local
   }, 0)
 
@@ -70,6 +82,18 @@ const OriginChart = ({ provinces }) => {
   return (
     <div>
       <h2 className="title">Origen</h2>
+
+      <div className="control">
+        <label className="radio">
+          <input type="radio" name="answer" checked={!yesterday} onClick={() => setYesterday(false)} />
+          Hoy
+        </label>
+        <label className="radio">
+          <input type="radio" name="answer" checked={yesterday} onClick={() => setYesterday(true)} />
+          Ayer
+        </label>
+      </div>
+
       <div className="columns">
         <div className="column is-half">
           <HighchartsReact
