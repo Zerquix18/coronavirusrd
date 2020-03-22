@@ -4,6 +4,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import MainInfo from '../components/main-info'
+
 const IndexPage = () => {
 
   const casesQuery = useStaticQuery(graphql`
@@ -55,7 +57,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Inicio" />
-      Hola, yo soy el contenido principal. :D
+
+      <MainInfo cases={allCases} />
+      
     </Layout>
   )
 }
