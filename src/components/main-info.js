@@ -6,8 +6,6 @@ const MainInfo = ({ cases }) => {
   const newCases = cases[cases.length -1].new_cases
   const newDeaths = cases[cases.length -1].new_deaths
 
-  console.log(totalCases, totalDeaths)
-
   return (
     <div className="container">
       <div className="columns">

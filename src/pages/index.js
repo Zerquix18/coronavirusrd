@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import MainInfo from '../components/main-info'
+import CaseCharts from '../components/case-charts'
 
 const IndexPage = () => {
 
@@ -60,6 +61,10 @@ const IndexPage = () => {
 
       <MainInfo cases={allCases} />
       
+      <hr />
+
+      <CaseCharts cases={allCases} />
+
     </Layout>
   )
 }
