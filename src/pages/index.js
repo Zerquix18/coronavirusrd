@@ -9,6 +9,7 @@ import CaseCharts from '../components/case-charts'
 import ProvinceDistribution from '../components/province-distribution'
 import OriginChart from '../components/origin-chart'
 import SexChart from '../components/sex-chart'
+import NewByDay from '../components/new-by-day'
 
 const IndexPage = () => {
 
@@ -79,6 +80,10 @@ const IndexPage = () => {
       <hr />
 
       <SexChart sexData={sexData} />
+
+      <hr />
+
+      <NewByDay cases={allCases} />
       
     </Layout>
   )
