@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 
 import MainInfo from '../components/main-info'
 import CaseCharts from '../components/case-charts'
+import ProvinceDistribution from '../components/province-distribution'
 
 const IndexPage = () => {
 
@@ -65,6 +66,11 @@ const IndexPage = () => {
 
       <CaseCharts cases={allCases} />
 
+      <hr />
+
+      <ProvinceDistribution provinces={allProvinces} />
+
+      
     </Layout>
   )
 }
