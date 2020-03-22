@@ -64,6 +64,10 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Inicio" />
 
+      <strong>Última actualización: </strong> 22 de marzo, 3:20 PM
+
+      <hr />
+
       <MainInfo cases={allCases} />
       
       <hr />
