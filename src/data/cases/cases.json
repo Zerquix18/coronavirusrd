@@ -154,6 +154,13 @@
       "total_deaths": 3,
       "new_cases": 90,
       "new_deaths": 0
+    },
+    {
+      "date": "2020/03/23",
+      "total_cases": 245,
+      "total_deaths": 3,
+      "new_cases": 43,
+      "new_deaths": 0
     }
   ]
 }

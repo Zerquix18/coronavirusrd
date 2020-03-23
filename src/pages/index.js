@@ -42,9 +42,6 @@ const IndexPage = () => {
             name
             cases {
               date
-              total_imported
-              total_under_investigation
-              total_local
               total_deaths
               total_cases
             }
@@ -64,7 +61,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Inicio" />
 
-      <strong>Última actualización: </strong> 22 de marzo, 3:20 PM
+      <strong>Última actualización: </strong> 23 de marzo, 12:54 PM
 
       <hr />
 
@@ -77,10 +74,6 @@ const IndexPage = () => {
       <hr />
 
       <ProvinceDistribution provinces={allProvinces} />
-
-      <hr />
-
-      <OriginChart provinces={allProvinces} />
 
       <hr />
 

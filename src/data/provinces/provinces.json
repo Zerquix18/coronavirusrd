@@ -7,20 +7,20 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 13,
-          "total_under_investigation": 28,
-          "total_local": 10,
           "total_deaths": 0,
           "total_cases": 51
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 16,
-          "total_under_investigation": 52,
-          "total_local": 20,
           "total_deaths": 0,
           "total_cases": 88
+        },
+        {
+          "date": "2020/03/22",
+
+          "total_deaths": 0,
+          "total_cases": 108
         }
       ]
     },
@@ -30,18 +30,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 1,
-          "total_under_investigation": 1,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 2
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 1,
-          "total_under_investigation": 1,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 2
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 2
         }
@@ -53,18 +53,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 0
         }
@@ -76,18 +76,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 1,
           "total_deaths": 0,
           "total_cases": 1
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 1,
+          "total_deaths": 0,
+          "total_cases": 1
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 1
         }
@@ -99,18 +99,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 0
         }
@@ -122,20 +122,20 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 1,
-          "total_under_investigation": 1,
-          "total_local": 2,
           "total_deaths": 1,
           "total_cases": 4
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 1,
-          "total_under_investigation": 4,
-          "total_local": 3,
           "total_deaths": 1,
           "total_cases": 8
+        },
+        {
+          "date": "2020/03/23",
+
+          "total_deaths": 1,
+          "total_cases": 17
         }
       ]
     },
@@ -145,18 +145,12 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         }
@@ -168,18 +162,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 0
         }
@@ -191,18 +185,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 1,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 1
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 1,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 1
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 1
         }
@@ -214,18 +208,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 0
         }
@@ -237,18 +231,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 4,
-          "total_under_investigation": 2,
-          "total_local": 1,
           "total_deaths": 0,
           "total_cases": 7
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 4,
-          "total_under_investigation": 1,
-          "total_local": 2,
+          "total_deaths": 0,
+          "total_cases": 7
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 7
         }
@@ -260,20 +254,20 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 3,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 3
+        },
+        {
+          "date": "2020/03/23",
+
+          "total_deaths": 0,
+          "total_cases": 6
         }
       ]
     },
@@ -283,18 +277,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 3,
-          "total_local": 1,
           "total_deaths": 0,
           "total_cases": 4
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 6,
-          "total_local": 1,
+          "total_deaths": 0,
+          "total_cases": 7
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 7
         }
@@ -306,18 +300,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 2,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 2
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 2,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 2
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 2
         }
@@ -329,18 +323,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 0
         }
@@ -352,18 +346,19 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
+
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 0
         }
@@ -375,18 +370,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 0
         }
@@ -398,18 +393,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 3,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 3
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 3,
-          "total_under_investigation": 0,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 3
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 3
         }
@@ -421,20 +416,20 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 2,
           "total_deaths": 0,
           "total_cases": 2
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 2,
           "total_deaths": 0,
           "total_cases": 2
+        },
+        {
+          "date": "2020/03/23",
+
+          "total_deaths": 0,
+          "total_cases": 3
         }
       ]
     },
@@ -444,18 +439,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 4,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 4
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 4,
-          "total_under_investigation": 0,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 4
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 4
         }
@@ -467,18 +462,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 1,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 1
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 1,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 1
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 1
         }
@@ -490,18 +485,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 1,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 1,
           "total_cases": 1
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 1,
-          "total_under_investigation": 1,
-          "total_local": 0,
+          "total_deaths": 1,
+          "total_cases": 2
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 1,
           "total_cases": 2
         }
@@ -513,20 +508,20 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 1,
-          "total_under_investigation": 3,
-          "total_local": 0,
           "total_deaths": 1,
           "total_cases": 4
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 1,
-          "total_under_investigation": 5,
-          "total_local": 0,
           "total_deaths": 1,
           "total_cases": 6
+        },
+        {
+          "date": "2020/03/23",
+
+          "total_deaths": 1,
+          "total_cases": 7
         }
       ]
     },
@@ -536,18 +531,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 1,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 1
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 1
         }
@@ -559,20 +554,20 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 6,
-          "total_under_investigation": 6,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 12
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 7,
-          "total_under_investigation": 19,
-          "total_local": 3,
           "total_deaths": 0,
           "total_cases": 29
+        },
+        {
+          "date": "2020/03/22",
+
+          "total_deaths": 0,
+          "total_cases": 30
         }
       ]
     },
@@ -582,18 +577,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 0
         }
@@ -605,18 +600,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 1,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 1
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 1,
-          "total_under_investigation": 0,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 1
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 1
         }
@@ -628,20 +623,20 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 1,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 1
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 1,
-          "total_under_investigation": 1,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 2
+        },
+        {
+          "date": "2020/03/23",
+
+          "total_deaths": 0,
+          "total_cases": 3
         }
       ]
     },
@@ -651,20 +646,20 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 1,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 1
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 1,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 1
+        },
+        {
+          "date": "2020/03/23",
+
+          "total_deaths": 0,
+          "total_cases": 0
         }
       ]
     },
@@ -674,18 +669,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 0
         }
@@ -697,18 +692,18 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
           "total_deaths": 0,
           "total_cases": 0
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 0,
-          "total_under_investigation": 0,
-          "total_local": 0,
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/23",
+
           "total_deaths": 0,
           "total_cases": 0
         }
@@ -720,20 +715,20 @@
         {
           "date": "2020/03/21",
 
-          "total_imported": 1,
-          "total_under_investigation": 8,
-          "total_local": 1,
           "total_deaths": 0,
           "total_cases": 10
         },
         {
           "date": "2020/03/22",
 
-          "total_imported": 1,
-          "total_under_investigation": 28,
-          "total_local": 2,
           "total_deaths": 0,
           "total_cases": 31
+        },
+        {
+          "date": "2020/03/23",
+
+          "total_deaths": 0,
+          "total_cases": 39
         }
       ]
     }
