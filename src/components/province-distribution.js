@@ -76,6 +76,7 @@ const ProvinceDistribution = ({ provinces }) => {
             const newDeaths = secondToLast ? lastUpdate.total_deaths - secondToLast.total_deaths : 0
 
             total_cases += lastUpdate.total_cases
+            // sometimes they substract cases. don't know why.
             total_new_cases += newCases
             total_deaths += lastUpdate.total_deaths
             total_new_deaths += newDeaths
@@ -84,7 +85,7 @@ const ProvinceDistribution = ({ provinces }) => {
               <tr>
                 <td>{ name }</td>
                 <td>{ lastUpdate.total_cases }</td>
-                <td>{ newCases > 0 && newCases }</td>
+                <td>{ newCases }</td>
                 <td>{ lastUpdate.total_deaths }</td>
                 <td>{ newDeaths > 0 && newDeaths }</td>
               </tr>
