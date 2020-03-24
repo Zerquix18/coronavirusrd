@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
+import DaySelector from "./day-selector"
 
 const ProvinceDistribution = ({ provinces }) => {
   const [filter, setFilter] = useState("")
-  const [yesterday, setYesterday] = useState(false)
+  const [fromToday, setToday] = useState(true)
 
   let provincesToDisplay = [...provinces]
-  if (yesterday) {
+  if (!fromToday) {
     provincesToDisplay = provincesToDisplay.map(province => {
       const cases = [...province.cases]
       cases.pop();
@@ -37,20 +38,15 @@ const ProvinceDistribution = ({ provinces }) => {
     <div>
       <h2 className="title">Distribución por provincia</h2>
 
-      <div className="control">
-        <label className="radio">
-          <input type="radio" name="province_distribution_date" checked={!yesterday} onClick={() => setYesterday(false)} />
-          Hoy
-        </label>
-        <label className="radio">
-          <input type="radio" name="province_distribution_date" checked={yesterday} onClick={() => setYesterday(true)} />
-          Ayer
-        </label>
-      </div>
+      <DaySelector
+        name="province-day"
+        dayValue={fromToday}
+        setValue={setToday}
+      />
 
       <div style={{ maxWidth: '300px' }}>
         <input
-          class="input"
+          className="input"
           type="text"
           placeholder="Filtrar"
           value={filter}
@@ -67,7 +63,7 @@ const ProvinceDistribution = ({ provinces }) => {
           <th>Nuevas muertes</th>
         </thead>
         <tbody>
-          { provincesToDisplay.map((province) => {
+          { provincesToDisplay.map((province, i) => {
             const name = province.name
             const lastUpdate = province.cases[province.cases.length - 1]
             const secondToLast = province.cases[province.cases.length - 2]
@@ -82,7 +78,7 @@ const ProvinceDistribution = ({ provinces }) => {
             total_new_deaths += newDeaths
 
             return (
-              <tr>
+              <tr key={i}>
                 <td>{ name }</td>
                 <td>{ lastUpdate.total_cases }</td>
                 <td>{ newCases }</td>

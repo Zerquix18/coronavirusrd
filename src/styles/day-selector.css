@@ -1,0 +1,12 @@
+
+.day-selector {
+    margin-bottom: 12px;
+}
+
+.day-selector label.radio {
+    margin-right: 8px;
+}
+
+.day-selector label.radio span {
+    margin-left: 6px;
+}
