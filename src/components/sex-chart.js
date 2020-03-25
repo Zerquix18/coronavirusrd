@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
+import DaySelector from "./day-selector"
 
 const SexChart = ({ sexData }) => {
-  const [yesterday, setYesterday] = useState(false)
+  const [fromToday, setToday] = useState(true)
 
   let sexDataToUse = [...sexData]
-  if (yesterday) {
+  if (!fromToday) {
     sexDataToUse.pop();
   }
 
@@ -62,16 +63,11 @@ const SexChart = ({ sexData }) => {
     <div>
       <h2 className="title">Distribución por sexo</h2>
 
-      <div className="control">
-        <label className="radio">
-          <input type="radio" name="answer" checked={!yesterday} onClick={() => setYesterday(false)} />
-          Hoy
-        </label>
-        <label className="radio">
-          <input type="radio" name="answer" checked={yesterday} onClick={() => setYesterday(true)} />
-          Ayer
-        </label>
-      </div>
+      <DaySelector
+        name="sex-chart-day"
+        dayValue={fromToday}
+        setValue={setToday}
+      />
 
       <div className="columns">
         <div className="column is-half">

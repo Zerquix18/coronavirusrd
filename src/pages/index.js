@@ -55,8 +55,6 @@ const IndexPage = () => {
   const sexData = casesQuery.allSexJson.nodes[0].sex
   const allProvinces = casesQuery.allProvincesJson.nodes[0].provinces
 
-  console.log(allCases, sexData, allProvinces)
-
   return (
     <Layout>
       <SEO title="Inicio" />
@@ -66,7 +64,7 @@ const IndexPage = () => {
       <hr />
 
       <MainInfo cases={allCases} />
-      
+
       <hr />
 
       <CaseCharts cases={allCases} />
@@ -86,7 +84,7 @@ const IndexPage = () => {
       <hr />
 
       <GrowthFactor cases={allCases} />
-      
+
     </Layout>
   )
 }

@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
+import DaySelector from "./day-selector"
 
 const OriginChart = ({ provinces }) => {
-  const [yesterday, setYesterday] = useState(false)
+  const [fromToday, setToday] = useState(true)
 
   let provincesToDisplay = [...provinces]
-  if (yesterday) {
+  if (!fromToday) {
     provincesToDisplay = provincesToDisplay.map(province => {
       const cases = [...province.cases]
       cases.pop();
@@ -81,16 +82,11 @@ const OriginChart = ({ provinces }) => {
     <div>
       <h2 className="title">Origen</h2>
 
-      <div className="control">
-        <label className="radio">
-          <input type="radio" name="origin_date" checked={!yesterday} onClick={() => setYesterday(false)} />
-          Hoy
-        </label>
-        <label className="radio">
-          <input type="radio" name="origin_date" checked={yesterday} onClick={() => setYesterday(true)} />
-          Ayer
-        </label>
-      </div>
+      <DaySelector
+        name="origin-day"
+        dayValue={fromToday}
+        setValue={setToday}
+      />
 
       <div className="columns">
         <div className="column is-half">
