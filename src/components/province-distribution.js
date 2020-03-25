@@ -81,7 +81,7 @@ const ProvinceDistribution = ({ provinces }) => {
               <tr key={i}>
                 <td>{ name }</td>
                 <td>{ lastUpdate.total_cases }</td>
-                <td>{ newCases }</td>
+                <td>{ newCases !== 0 && newCases }</td>
                 <td>{ lastUpdate.total_deaths }</td>
                 <td>{ newDeaths > 0 && newDeaths }</td>
               </tr>
