@@ -27,6 +27,12 @@
 
           "total_deaths": 0,
           "total_cases": 137
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 1,
+          "total_cases": 178
         }
       ]
     },
@@ -53,6 +59,12 @@
         },
         {
           "date": "2020/03/24",
+
+          "total_deaths": 0,
+          "total_cases": 1
+        },
+        {
+          "date": "2020/03/25",
 
           "total_deaths": 0,
           "total_cases": 1
@@ -85,6 +97,12 @@
 
           "total_deaths": 0,
           "total_cases": 0
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 0
         }
       ]
     },
@@ -114,6 +132,12 @@
 
           "total_deaths": 0,
           "total_cases": 1
+        },
+        {
+          "date": "2020/03/24",
+
+          "total_deaths": 0,
+          "total_cases": 2
         }
       ]
     },
@@ -140,6 +164,12 @@
         },
         {
           "date": "2020/03/24",
+
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/25",
 
           "total_deaths": 0,
           "total_cases": 0
@@ -172,6 +202,12 @@
 
           "total_deaths": 4,
           "total_cases": 29
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 4,
+          "total_cases": 29
         }
       ]
     },
@@ -198,6 +234,12 @@
         },
         {
           "date": "2020/03/24",
+
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/25",
 
           "total_deaths": 0,
           "total_cases": 0
@@ -230,6 +272,12 @@
 
           "total_deaths": 0,
           "total_cases": 0
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 0
         }
       ]
     },
@@ -259,6 +307,12 @@
 
           "total_deaths": 0,
           "total_cases": 2
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 5
         }
       ]
     },
@@ -288,6 +342,12 @@
 
           "total_deaths": 0,
           "total_cases": 0
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 1
         }
       ]
     },
@@ -317,6 +377,12 @@
 
           "total_deaths": 0,
           "total_cases": 11
+        },
+        {
+          "date": "2020/03/24",
+
+          "total_deaths": 0,
+          "total_cases": 12
         }
       ]
     },
@@ -342,7 +408,13 @@
           "total_cases": 6
         },
         {
-          "date": "2020/03/23",
+          "date": "2020/03/24",
+
+          "total_deaths": 0,
+          "total_cases": 5
+        },
+        {
+          "date": "2020/03/25",
 
           "total_deaths": 0,
           "total_cases": 5
@@ -375,6 +447,12 @@
 
           "total_deaths": 0,
           "total_cases": 8
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 8
         }
       ]
     },
@@ -404,6 +482,12 @@
 
           "total_deaths": 0,
           "total_cases": 3
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 3
         }
       ]
     },
@@ -430,6 +514,12 @@
         },
         {
           "date": "2020/03/24",
+
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/25",
 
           "total_deaths": 0,
           "total_cases": 0
@@ -463,6 +553,12 @@
 
           "total_deaths": 0,
           "total_cases": 0
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 0
         }
       ]
     },
@@ -489,6 +585,12 @@
         },
         {
           "date": "2020/03/24",
+
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/25",
 
           "total_deaths": 0,
           "total_cases": 0
@@ -521,6 +623,12 @@
 
           "total_deaths": 0,
           "total_cases": 5
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 5
         }
       ]
     },
@@ -547,6 +655,12 @@
         },
         {
           "date": "2020/03/24",
+
+          "total_deaths": 0,
+          "total_cases": 3
+        },
+        {
+          "date": "2020/03/25",
 
           "total_deaths": 0,
           "total_cases": 3
@@ -579,6 +693,12 @@
 
           "total_deaths": 0,
           "total_cases": 5
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 1,
+          "total_cases": 7
         }
       ]
     },
@@ -608,6 +728,12 @@
 
           "total_deaths": 0,
           "total_cases": 1
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 4
         }
       ]
     },
@@ -634,6 +760,12 @@
         },
         {
           "date": "2020/03/24",
+
+          "total_deaths": 1,
+          "total_cases": 2
+        },
+        {
+          "date": "2020/03/25",
 
           "total_deaths": 1,
           "total_cases": 2
@@ -666,6 +798,12 @@
 
           "total_deaths": 1,
           "total_cases": 10
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 1,
+          "total_cases": 10
         }
       ]
     },
@@ -695,6 +833,12 @@
 
           "total_deaths": 0,
           "total_cases": 1
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 6
         }
       ]
     },
@@ -724,6 +868,12 @@
 
           "total_deaths": 0,
           "total_cases": 44
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 2,
+          "total_cases": 53
         }
       ]
     },
@@ -750,6 +900,12 @@
         },
         {
           "date": "2020/03/24",
+
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/25",
 
           "total_deaths": 0,
           "total_cases": 0
@@ -782,6 +938,12 @@
 
           "total_deaths": 0,
           "total_cases": 1
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 1
         }
       ]
     },
@@ -808,6 +970,12 @@
         },
         {
           "date": "2020/03/24",
+
+          "total_deaths": 0,
+          "total_cases": 3
+        },
+        {
+          "date": "2020/03/25",
 
           "total_deaths": 0,
           "total_cases": 3
@@ -840,6 +1008,12 @@
 
           "total_deaths": 0,
           "total_cases": 0
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 0
         }
       ]
     },
@@ -869,6 +1043,12 @@
 
           "total_deaths": 0,
           "total_cases": 0
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 2
         }
       ]
     },
@@ -895,6 +1075,12 @@
         },
         {
           "date": "2020/03/24",
+
+          "total_deaths": 0,
+          "total_cases": 0
+        },
+        {
+          "date": "2020/03/25",
 
           "total_deaths": 0,
           "total_cases": 0
@@ -927,6 +1113,12 @@
 
           "total_deaths": 0,
           "total_cases": 40
+        },
+        {
+          "date": "2020/03/25",
+
+          "total_deaths": 0,
+          "total_cases": 52
         }
       ]
     }

@@ -168,6 +168,13 @@
       "total_deaths": 6,
       "new_cases": 67,
       "new_deaths": 3
+    },
+    {
+      "date": "2020/03/25",
+      "total_cases": 392,
+      "total_deaths": 10,
+      "new_cases": 80,
+      "new_deaths": 4
     }
   ]
 }
