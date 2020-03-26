@@ -197,6 +197,18 @@
       "total_at_the_hospital": 109,
       "total_at_home": 273,
       "total_under_investigation": 457
+    },
+    {
+      "date": "2020/03/26",
+      "total_cases": 488,
+      "total_deaths": 10,
+      "new_cases": 96,
+      "new_deaths": 0,
+      "total_recovered": 2,
+      "total_discarded": 960,
+      "total_at_the_hospital": 108,
+      "total_at_home": 367,
+      "total_under_investigation": 425
     }
   ]
 }
