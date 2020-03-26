@@ -11,6 +11,7 @@ import SexChart from '../components/sex-chart'
 import NewByDay from '../components/new-by-day'
 import GrowthFactor from "../components/growth-factor"
 import Updates from '../components/updates'
+import CaseLocation from '../components/case-location'
 
 const IndexPage = () => {
 
@@ -24,6 +25,11 @@ const IndexPage = () => {
             total_deaths
             new_cases
             new_deaths
+            total_recovered
+            total_discarded
+            total_at_the_hospital
+            total_at_home
+            total_under_investigation
           }
         }
       }
@@ -84,6 +90,10 @@ const IndexPage = () => {
       <hr />
 
       <ProvinceDistribution provinces={allProvinces} />
+
+      <hr />
+
+      <CaseLocation cases={allCases} />
 
       <hr />
 

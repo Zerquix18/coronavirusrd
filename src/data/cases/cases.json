@@ -146,35 +146,57 @@
       "total_cases": 112,
       "total_deaths": 3,
       "new_cases": 40,
-      "new_deaths": 1
+      "new_deaths": 1,
+      "total_discarded": 176,
+      "total_at_the_hospital": 52,
+      "total_at_home": 57,
+      "total_under_investigation": 290
     },
     {
       "date": "2020/03/22",
       "total_cases": 202,
       "total_deaths": 3,
       "new_cases": 90,
-      "new_deaths": 0
+      "new_deaths": 0,
+      "total_discarded": 395,
+      "total_at_the_hospital": 56,
+      "total_at_home": 143,
+      "total_under_investigation": 268
     },
     {
       "date": "2020/03/23",
       "total_cases": 245,
       "total_deaths": 3,
       "new_cases": 43,
-      "new_deaths": 0
+      "new_deaths": 0,
+      "total_discarded": 543,
+      "total_at_the_hospital": 59,
+      "total_at_home": 183,
+      "total_under_investigation": 270
     },
     {
       "date": "2020/03/24",
       "total_cases": 312,
       "total_deaths": 6,
       "new_cases": 67,
-      "new_deaths": 3
+      "new_deaths": 3,
+      "total_recovered": 2,
+      "total_discarded": 661,
+      "total_at_the_hospital": 68,
+      "total_at_home": 236,
+      "total_under_investigation": 298
     },
     {
       "date": "2020/03/25",
       "total_cases": 392,
       "total_deaths": 10,
       "new_cases": 80,
-      "new_deaths": 4
+      "new_deaths": 4,
+      "total_recovered": 2,
+      "total_discarded": 715,
+      "total_at_the_hospital": 109,
+      "total_at_home": 273,
+      "total_under_investigation": 457
     }
   ]
 }
