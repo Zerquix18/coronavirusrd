@@ -7,10 +7,10 @@ import SEO from "../components/seo"
 import MainInfo from '../components/main-info'
 import CaseCharts from '../components/case-charts'
 import ProvinceDistribution from '../components/province-distribution'
-import OriginChart from '../components/origin-chart'
 import SexChart from '../components/sex-chart'
 import NewByDay from '../components/new-by-day'
 import GrowthFactor from "../components/growth-factor"
+import Updates from '../components/updates'
 
 const IndexPage = () => {
 
@@ -36,6 +36,7 @@ const IndexPage = () => {
           }
         }
       }
+
       allProvincesJson {
         nodes {
           provinces {
@@ -48,12 +49,23 @@ const IndexPage = () => {
           }
         }
       }
+
+      allUpdatesJson {
+        nodes {
+          updates {
+            title
+            link
+            date
+          }
+        }
+      }
     }
   `)
 
   const allCases = casesQuery.allCasesJson.nodes[0].cases
   const sexData = casesQuery.allSexJson.nodes[0].sex
   const allProvinces = casesQuery.allProvincesJson.nodes[0].provinces
+  const updates = casesQuery.allUpdatesJson.nodes[0].updates
 
   return (
     <Layout>
@@ -84,6 +96,10 @@ const IndexPage = () => {
       <hr />
 
       <GrowthFactor cases={allCases} />
+
+      <hr />
+
+      <Updates updates={updates} />
 
     </Layout>
   )
