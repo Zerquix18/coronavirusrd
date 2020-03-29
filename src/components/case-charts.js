@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
@@ -6,6 +6,9 @@ import HighchartsReact from 'highcharts-react-official'
 import format from 'date-fns/format'
 
 const CaseCharts = ({ cases }) => {
+  const [areCasesLogarithmic, setAreCasesLogarithmic] = useState(false);
+  const [areDeathsLogarithmic, setAreDeathsLogarithmic] = useState(false);
+
   const caseOptions = {
     title: {
       text: 'Total casos por día'
@@ -13,7 +16,8 @@ const CaseCharts = ({ cases }) => {
     yAxis: {
       title: {
           text: 'Número de casos'
-      }
+      },
+      type: areCasesLogarithmic ? 'logarithmic' : 'lineal',
     },
     xAxis: {
       accessibility: {
@@ -44,7 +48,8 @@ const CaseCharts = ({ cases }) => {
     yAxis: {
       title: {
           text: 'Número de muertes'
-      }
+      },
+      type: areDeathsLogarithmic ? 'logarithmic' : 'lineal',
     },
     xAxis: {
       accessibility: {
@@ -72,12 +77,32 @@ const CaseCharts = ({ cases }) => {
   return (
     <div className="columns">
       <div className="column is-half">
+        <div className="control day-selector">
+          <label className="radio">
+            <input type="radio" name="cases-logarithmic" checked={!areCasesLogarithmic} onClick={() => setAreCasesLogarithmic(false)} />
+            <span className="">Escala Lineal</span>
+          </label>
+          <label className="radio">
+            <input type="radio" name="cases-logarithmic" checked={areCasesLogarithmic} onClick={() => setAreCasesLogarithmic(true)} />
+            <span className="">Escala Logarítimica</span>
+          </label>
+        </div>
         <HighchartsReact
           highcharts={Highcharts}
           options={caseOptions}
         />
       </div>
       <div className="column is-half">
+        <div className="control day-selector">
+          <label className="radio">
+            <input type="radio" name="deaths-logarithmic" checked={!areDeathsLogarithmic} onClick={() => setAreDeathsLogarithmic(false)} />
+            <span className="">Escala Lineal</span>
+          </label>
+          <label className="radio">
+            <input type="radio" name="deaths-logarithmic" checked={areDeathsLogarithmic} onClick={() => setAreDeathsLogarithmic(true)} />
+            <span className="">Escala Logarítimica</span>
+          </label>
+        </div>
         <HighchartsReact
           highcharts={Highcharts}
           options={deathOptions}
