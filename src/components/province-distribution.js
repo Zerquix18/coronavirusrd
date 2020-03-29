@@ -3,6 +3,7 @@ import DaySelector from "./day-selector"
 
 const ProvinceDistribution = ({ provinces }) => {
   const [filter, setFilter] = useState("")
+  const [sort, setSort] = useState({ sortKey: 'total_cases', sortDirection: 'up' })
   const [fromToday, setToday] = useState(true)
 
   let provincesToDisplay = [...provinces]
@@ -23,8 +24,11 @@ const ProvinceDistribution = ({ provinces }) => {
   })
 
   provincesToDisplay.sort((a, b) => {
-    const aTotalCases = a.cases[a.cases.length - 1].total_cases
-    const bTotalCases = b.cases[b.cases.length - 1].total_cases
+    if (sort.sortKey === 'province') {
+      return a.name.localeCompare(b.name)
+    }
+    const aTotalCases = a.cases[a.cases.length - 1][sort.sortKey]
+    const bTotalCases = b.cases[b.cases.length - 1][sort.sortKey]
 
     return bTotalCases - aTotalCases
   })
@@ -56,11 +60,31 @@ const ProvinceDistribution = ({ provinces }) => {
 
       <table className="table is-hoverable">
         <thead>
-          <th>Provincia</th>
-          <th>Casos totales</th>
-          <th>Casos nuevos</th>
-          <th>Total muertes</th>
-          <th>Nuevas muertes</th>
+          <th onClick={() => setSort({ sortKey: 'province', sortDirection: 'up' })}>
+            Provincia&nbsp;
+            { sort.sortKey === 'province' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'province' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
+          </th>
+          <th onClick={() => setSort({ sortKey: 'total_cases', sortDirection: 'up' })}>
+            Casos totales&nbsp;
+            { sort.sortKey === 'total_cases' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'total_cases' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
+          </th>
+          <th>
+            Casos nuevos&nbsp;
+            { sort.sortKey === 'new_cases' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'new_cases' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
+          </th>
+          <th onClick={() => setSort({ sortKey: 'total_deaths', sortDirection: 'up' })}>
+            Total muertes&nbsp;
+            { sort.sortKey === 'total_deaths' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'total_deaths' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
+          </th>
+          <th>
+            Nuevas muertes&nbsp;
+            { sort.sortKey === 'new_deaths' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'new_deaths' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
+          </th>
         </thead>
         <tbody>
           { provincesToDisplay.map((province, i) => {
@@ -74,7 +98,6 @@ const ProvinceDistribution = ({ provinces }) => {
             total_cases += lastUpdate.total_cases
             // sometimes they substract cases. don't know why.
             total_new_cases += newCases
-            console.log(total_new_cases, newCases)
             total_deaths += lastUpdate.total_deaths
             total_new_deaths += newDeaths
 
