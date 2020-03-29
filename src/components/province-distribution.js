@@ -74,6 +74,7 @@ const ProvinceDistribution = ({ provinces }) => {
             total_cases += lastUpdate.total_cases
             // sometimes they substract cases. don't know why.
             total_new_cases += newCases
+            console.log(total_new_cases, newCases)
             total_deaths += lastUpdate.total_deaths
             total_new_deaths += newDeaths
 
