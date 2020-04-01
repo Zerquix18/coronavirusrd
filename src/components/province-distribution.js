@@ -105,12 +105,12 @@ const ProvinceDistribution = ({ provinces }) => {
               <tr key={i}>
                 <td>{ name }</td>
                 <td>{ lastUpdate.total_cases }</td>
-                <td className={newCases > 0 && 'is-warning'}>
+                <td className={newCases > 0 ? 'is-warning' : undefined}>
                   { newCases > 0 && `+${newCases}` }
                   { newCases < 0 && `-${newCases}` }
                 </td>
                 <td>{ lastUpdate.total_deaths }</td>
-                <td className={newDeaths && 'is-danger'}>{ newDeaths > 0 && `+${newDeaths}` }</td>
+                <td className={newDeaths ? 'is-danger' : undefined}>{ newDeaths > 0 && `+${newDeaths}` }</td>
               </tr>
             )
           })}
