@@ -25,7 +25,7 @@ const NewByDay = ({ cases }) => {
     },
     series: [{
       name: "Nuevos casos",
-      data: cases.slice(-15).map(thisCase => {
+      data: cases.slice(-30).map(thisCase => {
         const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
         return {
           x: new Date(thisCase.date),
@@ -54,7 +54,7 @@ const NewByDay = ({ cases }) => {
     },
     series: [{
       name: "Nuevas muertes",
-      data: cases.slice(-15).map(thisCase => {
+      data: cases.slice(-30).map(thisCase => {
         const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
         return {
           x: new Date(thisCase.date),
