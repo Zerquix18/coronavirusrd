@@ -1,10 +1,20 @@
 import React, { useState } from 'react'
 import DaySelector from "./day-selector"
+import ProvinceCasesModal from './province-cases-modal'
+
+const provincesWithExtra = [
+  'Distrito Nacional',
+  'Santiago',
+  'Santo Domingo',
+  'Duarte',
+  'La Vega',  
+]
 
 const ProvinceDistribution = ({ provinces }) => {
-  const [filter, setFilter] = useState("")
+  const [filter, setFilter] = useState('')
   const [sort, setSort] = useState({ sortKey: 'total_cases', sortDirection: 'up' })
   const [fromToday, setToday] = useState(true)
+  const [showingDetailsFor, setShowingDetailsFor] = useState(-1) // index
 
   let provincesToDisplay = [...provinces]
   if (!fromToday) {
@@ -101,9 +111,20 @@ const ProvinceDistribution = ({ provinces }) => {
             total_deaths += lastUpdate.total_deaths
             total_new_deaths += newDeaths
 
+            const openModal = () => {
+              setShowingDetailsFor(i)
+            }
+
             return (
               <tr key={i}>
-                <td>{ name }</td>
+                <td>
+                  { provincesWithExtra.includes(name) ? (
+                    <a href="javascript:void(0)" onClick={openModal}>{name}</a>
+                  )
+                  :
+                    name
+                }
+                </td>
                 <td>{ lastUpdate.total_cases }</td>
                 <td className={newCases > 0 ? 'is-warning' : undefined}>
                   { newCases > 0 && `+${newCases}` }
@@ -124,6 +145,15 @@ const ProvinceDistribution = ({ provinces }) => {
           </tr>
         </tbody>
       </table>
+
+      { showingDetailsFor > -1 && (
+        <ProvinceCasesModal
+          province={provincesToDisplay[showingDetailsFor]}
+          onClose={() => {
+            setShowingDetailsFor(-1)
+          }}
+        />
+      )}
     </div>
   )
 }
