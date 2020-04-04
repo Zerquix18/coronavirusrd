@@ -69,6 +69,22 @@ const SexChart = ({ sexData }) => {
     title: {
       text: 'Diferencia en sexo por dia'
     },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          dataLabels: {
+              enabled: true,
+              format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+          }
+      }
+    },
     xAxis: {
       accessibility: {
           rangeDescription: 'Fecha'
