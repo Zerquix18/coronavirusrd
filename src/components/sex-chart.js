@@ -72,19 +72,6 @@ const SexChart = ({ sexData }) => {
     tooltip: {
       pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
     },
-    tooltip: {
-      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    plotOptions: {
-      pie: {
-          allowPointSelect: true,
-          cursor: 'pointer',
-          dataLabels: {
-              enabled: true,
-              format: '<b>{point.name}</b>: {point.percentage:.1f} %'
-          }
-      }
-    },
     xAxis: {
       accessibility: {
           rangeDescription: 'Fecha'
@@ -101,7 +88,15 @@ const SexChart = ({ sexData }) => {
     plotOptions: {
       series: {
           stacking: 'normal'
-      }
+      },
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+            enabled: true,
+            format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+        }
+    }
     },
     series: [
       {
