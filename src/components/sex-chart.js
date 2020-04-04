@@ -4,6 +4,8 @@ import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import DaySelector from "./day-selector"
 
+import format from 'date-fns/format'
+
 const SexChart = ({ sexData }) => {
   const [fromToday, setToday] = useState(true)
 
@@ -52,11 +54,64 @@ const SexChart = ({ sexData }) => {
           y: men * 100,
         },
         {
+          color: "#fab9c8",
           name: 'Femenino',
           y: women * 100,
         },
       ]
     }]
+  }
+
+  const differencesByDayOptions = {
+    chart: {
+      type: 'column'
+    },
+    title: {
+      text: 'Diferencia en sexo por dia'
+    },
+    xAxis: {
+      accessibility: {
+          rangeDescription: 'Fecha'
+      },
+      type: 'datetime',
+      dateTimeLabelFormats: {
+         day: '%d %b %Y'
+      }
+    },
+    yAxis: {
+      min: 0,
+      max: 100,
+    },
+    plotOptions: {
+      series: {
+          stacking: 'normal'
+      }
+    },
+    series: [
+      {
+        name: "Masculino",
+        data: sexData.slice(-30).map(thisCase => {
+          const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
+          return {
+            x: new Date(thisCase.date),
+            y: Math.round(thisCase.men * 100),
+            name: date,
+          }
+        }),
+      },
+      {
+        name: "Femenino",
+        color: "#fab9c8",
+        data: sexData.slice(-30).map(thisCase => {
+          const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
+          return {
+            x: new Date(thisCase.date),
+            y: Math.round(thisCase.women * 100),
+            name: date,
+          }
+        }),
+      },
+    ]
   }
 
   return (
@@ -74,6 +129,12 @@ const SexChart = ({ sexData }) => {
           <HighchartsReact
             highcharts={Highcharts}
             options={options}
+          />
+        </div>
+        <div className="column is-half">
+          <HighchartsReact
+            highcharts={Highcharts}
+            options={differencesByDayOptions}
           />
         </div>
       </div>
