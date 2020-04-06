@@ -99,6 +99,13 @@
 
           "total_deaths": 13,
           "total_cases": 665
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 13,
+          "total_cases": 696,
+          "positivity": 0.27
         }
       ]
     },
@@ -200,6 +207,13 @@
 
           "total_deaths": 0,
           "total_cases": 7
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 7,
+          "positivity": 0.39
         }
       ]
     },
@@ -301,6 +315,13 @@
 
           "total_deaths": 0,
           "total_cases": 1
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 1,
+          "positivity": 0.25
         }
       ]
     },
@@ -402,6 +423,13 @@
 
           "total_deaths": 0,
           "total_cases": 12
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 12,
+          "positivity": 0.6
         }
       ]
     },
@@ -503,6 +531,13 @@
 
           "total_deaths": 0,
           "total_cases": 1
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 1,
+          "positivity": 1
         }
       ]
     },
@@ -604,6 +639,13 @@
 
           "total_deaths": 25,
           "total_cases": 132
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 26,
+          "total_cases": 141,
+          "positivity": 0.48
         }
       ]
     },
@@ -705,6 +747,13 @@
 
           "total_deaths": 0,
           "total_cases": 0
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 0,
+          "positivity": 0
         }
       ]
     },
@@ -806,6 +855,13 @@
 
           "total_deaths": 0,
           "total_cases": 1
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 1,
+          "positivity": 0.25
         }
       ]
     },
@@ -907,6 +963,13 @@
 
           "total_deaths": 1,
           "total_cases": 44
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 1,
+          "total_cases": 44,
+          "positivity": 0.69
         }
       ]
     },
@@ -1008,6 +1071,13 @@
 
           "total_deaths": 0,
           "total_cases": 1
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 1,
+          "positivity": 1
         }
       ]
     },
@@ -1109,6 +1179,13 @@
 
           "total_deaths": 1,
           "total_cases": 40
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 1,
+          "total_cases": 44,
+          "positivity": 0.19
         }
       ]
     },
@@ -1210,6 +1287,13 @@
 
           "total_deaths": 1,
           "total_cases": 32
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 1,
+          "total_cases": 33,
+          "positivity": 0.30
         }
       ]
     },
@@ -1311,6 +1395,13 @@
 
           "total_deaths": 5,
           "total_cases": 109
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 5,
+          "total_cases": 109,
+          "positivity": 0.43
         }
       ]
     },
@@ -1412,6 +1503,13 @@
 
           "total_deaths": 1,
           "total_cases": 10
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 1,
+          "total_cases": 12,
+          "positivity": 0.24
         }
       ]
     },
@@ -1513,6 +1611,13 @@
 
           "total_deaths": 0,
           "total_cases": 3
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 3,
+          "positivity": 0.3
         }
       ]
     },
@@ -1615,6 +1720,13 @@
 
           "total_deaths": 0,
           "total_cases": 1
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 1,
+          "positivity": 1
         }
       ]
     },
@@ -1716,6 +1828,13 @@
 
           "total_deaths": 0,
           "total_cases": 7
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 7,
+          "positivity": 0.21
         }
       ]
     },
@@ -1817,6 +1936,13 @@
 
           "total_deaths": 0,
           "total_cases": 34
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 38,
+          "positivty": 0.40
         }
       ]
     },
@@ -1918,6 +2044,13 @@
 
           "total_deaths": 2,
           "total_cases": 19
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 2,
+          "total_cases": 20,
+          "positivity": 0.74
         }
       ]
     },
@@ -2019,6 +2152,13 @@
 
           "total_deaths": 1,
           "total_cases": 15
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 1,
+          "total_cases": 15,
+          "positivity": 0.41
         }
       ]
     },
@@ -2120,6 +2260,13 @@
 
           "total_deaths": 1,
           "total_cases": 32
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 1,
+          "total_cases": 32,
+          "positivity": 0.43
         }
       ]
     },
@@ -2221,6 +2368,13 @@
 
           "total_deaths": 3,
           "total_cases": 11
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 3,
+          "total_cases": 12,
+          "positivity": 0.40
         }
       ]
     },
@@ -2322,6 +2476,13 @@
 
           "total_deaths": 4,
           "total_cases": 24
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 4,
+          "total_cases": 24,
+          "positivity": 0.25
         }
       ]
     },
@@ -2423,6 +2584,13 @@
 
           "total_deaths": 2,
           "total_cases": 27
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 2,
+          "total_cases": 29,
+          "positivity": 0.53
         }
       ]
     },
@@ -2524,6 +2692,13 @@
 
           "total_deaths": 6,
           "total_cases": 194
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 8,
+          "total_cases": 204,
+          "positivity": 0.44
         }
       ]
     },
@@ -2625,6 +2800,13 @@
 
           "total_deaths": 0,
           "total_cases": 18
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 18,
+          "positivity": 0.41
         }
       ]
     },
@@ -2726,6 +2908,13 @@
 
           "total_deaths": 0,
           "total_cases": 10
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 10,
+          "positivity": 0.45
         }
       ]
     },
@@ -2827,6 +3016,13 @@
 
           "total_deaths": 2,
           "total_cases": 30
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 2,
+          "total_cases": 31,
+          "positivity": 0.44
         }
       ]
     },
@@ -2928,6 +3124,13 @@
 
           "total_deaths": 1,
           "total_cases": 4
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 1,
+          "total_cases": 4,
+          "positivity": 0.67
         }
       ]
     },
@@ -3029,6 +3232,13 @@
 
           "total_deaths": 0,
           "total_cases": 4
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 4,
+          "positivity": 0
         }
       ]
     },
@@ -3130,6 +3340,13 @@
 
           "total_deaths": 0,
           "total_cases": 0
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 0,
+          "total_cases": 0,
+          "positivity": 0
         }
       ]
     },
@@ -3231,6 +3448,13 @@
 
           "total_deaths": 13,
           "total_cases": 257
+        },
+        {
+          "date": "2020/04/06",
+
+          "total_deaths": 14,
+          "total_cases": 274,
+          "positivity": 0.35
         }
       ]
     }
