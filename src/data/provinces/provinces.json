@@ -1293,7 +1293,7 @@
 
           "total_deaths": 1,
           "total_cases": 33,
-          "positivity": 0.30
+          "positivity": 0.3
         }
       ]
     },
@@ -1942,7 +1942,7 @@
 
           "total_deaths": 0,
           "total_cases": 38,
-          "positivty": 0.40
+          "positivity": 0.4
         }
       ]
     },
@@ -2374,7 +2374,7 @@
 
           "total_deaths": 3,
           "total_cases": 12,
-          "positivity": 0.40
+          "positivity": 0.4
         }
       ]
     },
@@ -3238,7 +3238,7 @@
 
           "total_deaths": 0,
           "total_cases": 4,
-          "positivity": 0
+          "positivity": 0.33
         }
       ]
     },

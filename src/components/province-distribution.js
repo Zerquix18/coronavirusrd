@@ -47,6 +47,8 @@ const ProvinceDistribution = ({ provinces }) => {
   let total_new_cases = 0
   let total_deaths = 0
   let total_new_deaths = 0
+  let total_discarded = 0
+  let total_tests = 0
 
   return (
     <div>
@@ -95,6 +97,12 @@ const ProvinceDistribution = ({ provinces }) => {
             { sort.sortKey === 'new_deaths' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
             { sort.sortKey === 'new_deaths' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
+          <th>
+            Casos descartados
+          </th>
+          <th>
+            Pruebas totales
+          </th>
         </thead>
         <tbody>
           { provincesToDisplay.map((province, i) => {
@@ -105,11 +113,22 @@ const ProvinceDistribution = ({ provinces }) => {
             const newCases = secondToLast ? lastUpdate.total_cases - secondToLast.total_cases : 0
             const newDeaths = secondToLast ? lastUpdate.total_deaths - secondToLast.total_deaths : 0
 
+            let totalTests
+            if (lastUpdate.positivity === 0) {
+              totalTests = 0;
+            } else {
+              totalTests = Math.round(lastUpdate.total_cases / lastUpdate.positivity)
+            }
+
+            const discarded = totalTests - lastUpdate.total_cases;
+
             total_cases += lastUpdate.total_cases
             // sometimes they substract cases. don't know why.
             total_new_cases += newCases
             total_deaths += lastUpdate.total_deaths
             total_new_deaths += newDeaths
+            total_discarded += discarded
+            total_tests += totalTests
 
             const openModal = () => {
               setShowingDetailsFor(i)
@@ -132,6 +151,8 @@ const ProvinceDistribution = ({ provinces }) => {
                 </td>
                 <td>{ lastUpdate.total_deaths }</td>
                 <td className={newDeaths ? 'is-danger' : undefined}>{ newDeaths > 0 && `+${newDeaths}` }</td>
+                <td>{ Math.round(discarded) }</td>
+                <td>{ Math.round(totalTests) }</td>
               </tr>
             )
           })}
@@ -142,6 +163,8 @@ const ProvinceDistribution = ({ provinces }) => {
             <th>{ total_new_cases }</th>
             <th>{ total_deaths }</th>
             <th>{ total_new_deaths }</th>
+            <th>{ Math.ceil(total_discarded) }</th> 
+            <th>{ Math.ceil(total_tests) }</th>
           </tr>
         </tbody>
       </table>

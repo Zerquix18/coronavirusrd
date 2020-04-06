@@ -51,6 +51,7 @@ const IndexPage = () => {
               date
               total_deaths
               total_cases
+              positivity
             }
           }
         }
