@@ -117,7 +117,7 @@ const ProvinceDistribution = ({ provinces }) => {
             if (lastUpdate.positivity === 0) {
               totalTests = 0;
             } else {
-              totalTests = Math.round(lastUpdate.total_cases / lastUpdate.positivity)
+              totalTests = Math.ceil((lastUpdate.total_cases * 100) / (lastUpdate.positivity * 100))
             }
 
             const discarded = totalTests - lastUpdate.total_cases;
@@ -147,7 +147,7 @@ const ProvinceDistribution = ({ provinces }) => {
                 <td>{ lastUpdate.total_cases }</td>
                 <td className={newCases > 0 ? 'is-warning' : undefined}>
                   { newCases > 0 && `+${newCases}` }
-                  { newCases < 0 && `-${newCases}` }
+                  { newCases < 0 && `${newCases}` }
                 </td>
                 <td>{ lastUpdate.total_deaths }</td>
                 <td className={newDeaths ? 'is-danger' : undefined}>{ newDeaths > 0 && `+${newDeaths}` }</td>
