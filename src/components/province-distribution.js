@@ -49,6 +49,7 @@ const ProvinceDistribution = ({ provinces }) => {
   let total_new_deaths = 0
   let total_discarded = 0
   let total_tests = 0
+  let total_recovered = 0;
 
   return (
     <div>
@@ -98,6 +99,9 @@ const ProvinceDistribution = ({ provinces }) => {
             { sort.sortKey === 'new_deaths' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
           <th>
+            Recuperados
+          </th>
+          <th>
             Casos descartados
           </th>
           <th>
@@ -127,6 +131,7 @@ const ProvinceDistribution = ({ provinces }) => {
             total_new_cases += newCases
             total_deaths += lastUpdate.total_deaths
             total_new_deaths += newDeaths
+            total_recovered += lastUpdate.recovered;
             total_discarded += discarded
             total_tests += totalTests
 
@@ -151,6 +156,7 @@ const ProvinceDistribution = ({ provinces }) => {
                 </td>
                 <td>{ lastUpdate.total_deaths }</td>
                 <td className={newDeaths ? 'is-danger' : undefined}>{ newDeaths > 0 && `+${newDeaths}` }</td>
+                <td>{ lastUpdate.recovered }</td>
                 <td>{ Math.round(discarded) }</td>
                 <td>{ Math.round(totalTests) }</td>
               </tr>
@@ -163,6 +169,7 @@ const ProvinceDistribution = ({ provinces }) => {
             <th>{ total_new_cases }</th>
             <th>{ total_deaths }</th>
             <th>{ total_new_deaths }</th>
+            <th>{ total_recovered }</th>
             <th>{ Math.ceil(total_discarded) }</th> 
             <th>{ Math.ceil(total_tests) }</th>
           </tr>

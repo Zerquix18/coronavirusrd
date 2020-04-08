@@ -52,6 +52,7 @@ const IndexPage = () => {
               total_deaths
               total_cases
               positivity
+              recovered
             }
           }
         }
@@ -78,7 +79,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Inicio" />
 
-      <strong>Última actualización: </strong> 7 de Abril, 12:50PM
+      <strong>Última actualización: </strong> 8 de Abril, 7:40PM
 
       <hr />
 
