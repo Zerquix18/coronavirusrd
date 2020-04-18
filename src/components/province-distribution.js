@@ -2,14 +2,6 @@ import React, { useState } from 'react'
 import DaySelector from "./day-selector"
 import ProvinceCasesModal from './province-cases-modal'
 
-const provincesWithExtra = [
-  'Distrito Nacional',
-  'Santiago',
-  'Santo Domingo',
-  'Duarte',
-  'La Vega',  
-]
-
 const ProvinceDistribution = ({ provinces }) => {
   const [filter, setFilter] = useState('')
   const [sort, setSort] = useState({ sortKey: 'total_cases', sortDirection: 'up' })
@@ -142,12 +134,7 @@ const ProvinceDistribution = ({ provinces }) => {
             return (
               <tr key={i}>
                 <td>
-                  { provincesWithExtra.includes(name) ? (
-                    <a href="javascript:void(0)" onClick={openModal}>{name}</a>
-                  )
-                  :
-                    name
-                }
+                  <a href="javascript:void(0)" onClick={openModal}>{name}</a>
                 </td>
                 <td>{ lastUpdate.total_cases }</td>
                 <td className={newCases > 0 ? 'is-warning' : undefined}>

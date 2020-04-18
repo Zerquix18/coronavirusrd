@@ -3381,14 +3381,6 @@
           "recovered": 0
         },
         {
-          "date": "2020/04/07",
-
-          "total_deaths": 1,
-          "total_cases": 12,
-          "positivity": 0.26,
-          "recovered": 0
-        },
-        {
           "date": "2020/04/08",
 
           "total_deaths": 1,
@@ -5101,7 +5093,7 @@
           "recovered": 30
         },
         {
-          "date": "2020/04/17",
+          "date": "2020/04/18",
 
           "total_deaths": 23,
           "total_cases": 553,
