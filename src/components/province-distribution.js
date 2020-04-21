@@ -39,9 +39,8 @@ const ProvinceDistribution = ({ provinces }) => {
   let total_new_cases = 0
   let total_deaths = 0
   let total_new_deaths = 0
-  let total_discarded = 0
-  let total_tests = 0
-  let total_recovered = 0;
+  let total_recovered = 0
+  let total_new_recovered = 0
 
   return (
     <div>
@@ -94,10 +93,7 @@ const ProvinceDistribution = ({ provinces }) => {
             Recuperados
           </th>
           <th>
-            Casos descartados
-          </th>
-          <th>
-            Pruebas totales
+            Nuevos recuperados
           </th>
         </thead>
         <tbody>
@@ -108,24 +104,15 @@ const ProvinceDistribution = ({ provinces }) => {
 
             const newCases = secondToLast ? lastUpdate.total_cases - secondToLast.total_cases : 0
             const newDeaths = secondToLast ? lastUpdate.total_deaths - secondToLast.total_deaths : 0
-
-            let totalTests
-            if (lastUpdate.positivity === 0) {
-              totalTests = 0;
-            } else {
-              totalTests = Math.ceil((lastUpdate.total_cases * 100) / (lastUpdate.positivity * 100))
-            }
-
-            const discarded = totalTests - lastUpdate.total_cases;
+            const newRecovered = secondToLast ? lastUpdate.recovered - secondToLast.recovered : 0
 
             total_cases += lastUpdate.total_cases
             // sometimes they substract cases. don't know why.
             total_new_cases += newCases
             total_deaths += lastUpdate.total_deaths
             total_new_deaths += newDeaths
+            total_new_recovered += newRecovered
             total_recovered += lastUpdate.recovered;
-            total_discarded += discarded
-            total_tests += totalTests
 
             const openModal = () => {
               setShowingDetailsFor(i)
@@ -144,8 +131,7 @@ const ProvinceDistribution = ({ provinces }) => {
                 <td>{ lastUpdate.total_deaths }</td>
                 <td className={newDeaths ? 'is-danger' : undefined}>{ newDeaths > 0 && `+${newDeaths}` }</td>
                 <td>{ lastUpdate.recovered }</td>
-                <td>{ Math.round(discarded) }</td>
-                <td>{ Math.round(totalTests) }</td>
+                <td className={newRecovered ? 'is-success' : undefined}>{ newRecovered > 0 && `+${newRecovered}` }</td>
               </tr>
             )
           })}
@@ -157,8 +143,7 @@ const ProvinceDistribution = ({ provinces }) => {
             <th>{ total_deaths }</th>
             <th>{ total_new_deaths }</th>
             <th>{ total_recovered }</th>
-            <th>{ Math.ceil(total_discarded) }</th> 
-            <th>{ Math.ceil(total_tests) }</th>
+            <th>{ total_new_recovered }</th>
           </tr>
         </tbody>
       </table>
