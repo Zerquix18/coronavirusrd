@@ -512,6 +512,17 @@
       "total_discarded": 13737,
       "total_at_the_hospital": 971,
       "total_at_home": 3633
+    },
+    {
+      "date": "2020/04/24",
+      "total_cases": 5749,
+      "total_deaths": 267,
+      "new_cases": 206,
+      "new_deaths": 2,
+      "total_recovered": 763,
+      "total_discarded": 14521,
+      "total_at_the_hospital": 1065,
+      "total_at_home": 3653
     }
   ]
 }
