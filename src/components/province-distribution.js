@@ -104,7 +104,7 @@ const ProvinceDistribution = ({ provinces }) => {
 
             const newCases = secondToLast ? lastUpdate.total_cases - secondToLast.total_cases : 0
             const newDeaths = secondToLast ? lastUpdate.total_deaths - secondToLast.total_deaths : 0
-            const newRecovered = secondToLast ? lastUpdate.recovered - secondToLast.recovered : 0
+            const newRecovered = secondToLast ? lastUpdate.total_recovered - secondToLast.total_recovered : 0
 
             total_cases += lastUpdate.total_cases
             // sometimes they substract cases. don't know why.
@@ -112,7 +112,7 @@ const ProvinceDistribution = ({ provinces }) => {
             total_deaths += lastUpdate.total_deaths
             total_new_deaths += newDeaths
             total_new_recovered += newRecovered
-            total_recovered += lastUpdate.recovered;
+            total_recovered += lastUpdate.total_recovered;
 
             const openModal = () => {
               setShowingDetailsFor(i)
@@ -130,7 +130,7 @@ const ProvinceDistribution = ({ provinces }) => {
                 </td>
                 <td>{ lastUpdate.total_deaths }</td>
                 <td className={newDeaths ? 'is-danger' : undefined}>{ newDeaths > 0 && `+${newDeaths}` }</td>
-                <td>{ lastUpdate.recovered }</td>
+                <td>{ lastUpdate.total_recovered }</td>
                 <td className={newRecovered ? 'is-success' : undefined}>{ newRecovered > 0 && `+${newRecovered}` }</td>
               </tr>
             )

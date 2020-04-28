@@ -52,7 +52,7 @@ const IndexPage = () => {
               total_deaths
               total_cases
               positivity
-              recovered
+              total_recovered
             }
           }
         }
