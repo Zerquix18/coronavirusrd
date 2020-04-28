@@ -30,7 +30,7 @@ const CaseCharts = ({ cases }) => {
     },
     series: [{
       name: "Casos",
-      data: cases.slice(-30).map(thisCase => {
+      data: cases.slice(-60).map(thisCase => {
         const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
         return {
           x: new Date(thisCase.date),
@@ -63,7 +63,7 @@ const CaseCharts = ({ cases }) => {
     series: [{
       name: "Muertes",
       color: '#fcba03',
-      data: cases.slice(-30).map(thisCase => {
+      data: cases.slice(-60).map(thisCase => {
         const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
         return {
           x: new Date(thisCase.date),
