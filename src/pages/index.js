@@ -12,6 +12,7 @@ import NewByDay from '../components/new-by-day'
 import GrowthFactor from "../components/growth-factor"
 import Updates from '../components/updates'
 import CaseLocation from '../components/case-location'
+import Tests from "../components/tests"
 
 const IndexPage = () => {
 
@@ -92,6 +93,10 @@ const IndexPage = () => {
       <hr />
 
       <ProvinceDistribution provinces={allProvinces} />
+
+      <hr />
+
+      <Tests cases={allCases} />
 
       <hr />
 
