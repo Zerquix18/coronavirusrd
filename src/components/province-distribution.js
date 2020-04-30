@@ -41,6 +41,7 @@ const ProvinceDistribution = ({ provinces }) => {
   let total_new_deaths = 0
   let total_recovered = 0
   let total_new_recovered = 0
+  let total_active = 0
 
   return (
     <div>
@@ -95,6 +96,9 @@ const ProvinceDistribution = ({ provinces }) => {
           <th>
             Nuevos recuperados
           </th>
+          <th>
+            Actualmente infectados
+          </th>
         </thead>
         <tbody>
           { provincesToDisplay.map((province, i) => {
@@ -105,6 +109,7 @@ const ProvinceDistribution = ({ provinces }) => {
             const newCases = secondToLast ? lastUpdate.total_cases - secondToLast.total_cases : 0
             const newDeaths = secondToLast ? lastUpdate.total_deaths - secondToLast.total_deaths : 0
             const newRecovered = secondToLast ? lastUpdate.total_recovered - secondToLast.total_recovered : 0
+            const active = lastUpdate.total_cases - lastUpdate.total_deaths - lastUpdate.total_recovered
 
             total_cases += lastUpdate.total_cases
             // sometimes they substract cases. don't know why.
@@ -112,7 +117,8 @@ const ProvinceDistribution = ({ provinces }) => {
             total_deaths += lastUpdate.total_deaths
             total_new_deaths += newDeaths
             total_new_recovered += newRecovered
-            total_recovered += lastUpdate.total_recovered;
+            total_recovered += lastUpdate.total_recovered
+            total_active += active
 
             const openModal = () => {
               setShowingDetailsFor(i)
@@ -132,6 +138,7 @@ const ProvinceDistribution = ({ provinces }) => {
                 <td className={newDeaths ? 'is-danger' : undefined}>{ newDeaths > 0 && `+${newDeaths}` }</td>
                 <td>{ lastUpdate.total_recovered }</td>
                 <td className={newRecovered ? 'is-success' : undefined}>{ newRecovered > 0 && `+${newRecovered}` }</td>
+                <td>{ active }</td>
               </tr>
             )
           })}
@@ -144,6 +151,7 @@ const ProvinceDistribution = ({ provinces }) => {
             <th>{ total_new_deaths }</th>
             <th>{ total_recovered }</th>
             <th>{ total_new_recovered }</th>
+            <th>{ total_active }</th>
           </tr>
         </tbody>
       </table>
