@@ -2,6 +2,7 @@ import React from 'react'
 import Cases from './case-charts'
 import NewByDay from './new-by-day'
 import Positivity from './positivity'
+import GrowthFactor from './growth-factor'
 
 const ProvinceCasesModal = ({ province, onClose }) => {
   return (
@@ -32,6 +33,9 @@ const ProvinceCasesModal = ({ province, onClose }) => {
 
           <Positivity cases={province.cases.filter(day => typeof day.positivity === 'number')} />
 
+          <hr />
+          
+          <GrowthFactor cases={province.cases} />
         </section>
       </div>
     </div>
