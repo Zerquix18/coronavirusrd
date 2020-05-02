@@ -306,6 +306,14 @@
           "total_cases": 1814,
           "positivity": 0.2040,
           "total_recovered": 514
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 42,
+          "total_cases": 1870,
+          "positivity": 0.1943,
+          "total_recovered": 529
         }
       ]
     },
@@ -614,6 +622,14 @@
           "total_cases": 51,
           "positivity": 0.2668,
           "total_recovered": 5
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 2,
+          "total_cases": 56,
+          "positivity": 0.2593,
+          "total_recovered": 7
         }
       ]
     },
@@ -921,6 +937,14 @@
           "total_deaths": 0,
           "total_cases": 5,
           "positivity": 0.2381,
+          "total_recovered": 1
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 0,
+          "total_cases": 5,
+          "positivity": 0.2273,
           "total_recovered": 1
         }
       ]
@@ -1230,6 +1254,14 @@
           "total_cases": 37,
           "positivity": 0.1201,
           "total_recovered": 7
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 1,
+          "total_cases": 38,
+          "positivity": 0.0949,
+          "total_recovered": 7
         }
       ]
     },
@@ -1537,6 +1569,14 @@
           "total_deaths": 0,
           "total_cases": 3,
           "positivity": 0.2143,
+          "total_recovered": 1
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 0,
+          "total_cases": 3,
+          "positivity": 0.1333,
           "total_recovered": 1
         }
       ]
@@ -1846,6 +1886,14 @@
           "total_cases": 632,
           "positivity": 0.2905,
           "total_recovered": 118
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 76,
+          "total_cases": 638,
+          "positivity": 0.2794,
+          "total_recovered": 126
         }
       ]
     },
@@ -2153,6 +2201,14 @@
           "total_deaths": 0,
           "total_cases": 4,
           "positivity": 0.1429,
+          "total_recovered": 0
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 0,
+          "total_cases": 4,
+          "positivity": 0.1111,
           "total_recovered": 0
         }
       ]
@@ -2462,6 +2518,15 @@
           "total_cases": 5,
           "positivity": 0.2222,
           "total_recovered": 0
+        },
+        {
+
+          "date": "2020/05/02",
+
+          "total_deaths": 0,
+          "total_cases": 5,
+          "positivity": 0.1875,
+          "total_recovered": 0
         }
       ]
     },
@@ -2770,6 +2835,14 @@
           "total_cases": 236,
           "positivity": 0.3971,
           "total_recovered": 28
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 7,
+          "total_cases": 240,
+          "positivity": 0.3897,
+          "total_recovered": 29
         }
       ]
     },
@@ -3073,6 +3146,14 @@
         },
         {
           "date": "2020/05/01",
+
+          "total_deaths": 0,
+          "total_cases": 1,
+          "positivity": 0,
+          "total_recovered": 1
+        },
+        {
+          "date": "2020/05/02",
 
           "total_deaths": 0,
           "total_cases": 1,
@@ -3386,6 +3467,14 @@
           "total_cases": 124,
           "positivity": 0.1270,
           "total_recovered": 46
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 1,
+          "total_cases": 127,
+          "positivity": 0.1213,
+          "total_recovered": 50
         }
       ]
     },
@@ -3694,6 +3783,14 @@
           "total_cases": 159,
           "positivity": 0.2380,
           "total_recovered": 25
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 2,
+          "total_cases": 170,
+          "positivity": 0.2318,
+          "total_recovered": 27
         }
       ]
     },
@@ -4002,6 +4099,14 @@
           "total_cases": 513,
           "positivity": 0.2754,
           "total_recovered": 78
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 9,
+          "total_cases": 528,
+          "positivity": 0.2640,
+          "total_recovered": 80
         }
       ]
     },
@@ -4310,6 +4415,14 @@
           "total_cases": 96,
           "positivity": 0.1868,
           "total_recovered": 11
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 4,
+          "total_cases": 96,
+          "positivity": 0.1828,
+          "total_recovered": 15
         }
       ]
     },
@@ -4618,6 +4731,14 @@
           "total_cases": 17,
           "positivity": 0.2419,
           "total_recovered": 2
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 0,
+          "total_cases": 17,
+          "positivity": 0.2542,
+          "total_recovered": 2
         }
       ]
     },
@@ -4922,6 +5043,14 @@
         },
         {
           "date": "2020/05/01",
+
+          "total_deaths": 0,
+          "total_cases": 3,
+          "positivity": 0.2222,
+          "total_recovered": 0
+        },
+        {
+          "date": "2020/05/02",
 
           "total_deaths": 0,
           "total_cases": 3,
@@ -5235,6 +5364,14 @@
           "total_cases": 55,
           "positivity": 0.1370,
           "total_recovered": 13
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 1,
+          "total_cases": 55,
+          "positivity": 0.1294,
+          "total_recovered": 15
         }
       ]
     },
@@ -5543,6 +5680,14 @@
           "total_cases": 229,
           "positivity": 0.2929,
           "total_recovered": 25
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 14,
+          "total_cases": 238,
+          "positivity": 0.2904,
+          "total_recovered": 27
         }
       ]
     },
@@ -5851,6 +5996,14 @@
           "total_cases": 181,
           "positivity": 0.3750,
           "total_recovered": 22
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 13,
+          "total_cases": 183,
+          "positivity": 0.3708,
+          "total_recovered": 23
         }
       ]
     },
@@ -6158,6 +6311,14 @@
           "total_deaths": 1,
           "total_cases": 24,
           "positivity": 0.25,
+          "total_recovered": 11
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 1,
+          "total_cases": 24,
+          "positivity": 0.2553,
           "total_recovered": 11
         }
       ]
@@ -6467,6 +6628,14 @@
           "total_cases": 215,
           "positivity": 0.2960,
           "total_recovered": 20
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 10,
+          "total_cases": 244,
+          "positivity": 0.2855,
+          "total_recovered": 22
         }
       ]
     },
@@ -6774,6 +6943,14 @@
           "total_deaths": 3,
           "total_cases": 68,
           "positivity": 0.2026,
+          "total_recovered": 3
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 3,
+          "total_cases": 70,
+          "positivity": 0.1943,
           "total_recovered": 3
         }
       ]
@@ -7083,6 +7260,14 @@
           "total_cases": 67,
           "positivity": 0.1454,
           "total_recovered": 16
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 9,
+          "total_cases": 68,
+          "positivity": 0.1378,
+          "total_recovered": 16
         }
       ]
     },
@@ -7391,6 +7576,14 @@
           "total_cases": 167,
           "positivity": 0.3054,
           "total_recovered": 15
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 6,
+          "total_cases": 184,
+          "positivity": 0.2922,
+          "total_recovered": 18
         }
       ]
     },
@@ -7699,6 +7892,14 @@
           "total_cases": 860,
           "positivity": 0.3106,
           "total_recovered": 143
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 54,
+          "total_cases": 883,
+          "positivity": 0.2960,
+          "total_recovered": 167
         }
       ]
     },
@@ -8005,6 +8206,14 @@
 
           "total_deaths": 1,
           "total_cases": 32,
+          "positivity": 0.375,
+          "total_recovered": 0
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 1,
+          "total_cases": 33,
           "positivity": 0.375,
           "total_recovered": 0
         }
@@ -8315,6 +8524,14 @@
           "total_cases": 37,
           "positivity": 0.2755,
           "total_recovered": 5
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 4,
+          "total_cases": 38,
+          "positivity": 0.2778,
+          "total_recovered": 6
         }
       ]
     },
@@ -8623,6 +8840,14 @@
           "total_cases": 192,
           "positivity": 0.3135,
           "total_recovered": 22
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 4,
+          "total_cases": 195,
+          "positivity": 0.3013,
+          "total_recovered": 23
         }
       ]
     },
@@ -8931,6 +9156,14 @@
           "total_cases": 16,
           "positivity": 0.3784,
           "total_recovered": 0
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 4,
+          "total_cases": 16,
+          "positivity": 0.3529,
+          "total_recovered": 1
         }
       ]
     },
@@ -9239,6 +9472,14 @@
           "total_cases": 12,
           "positivity": 0.2647,
           "total_recovered": 2
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 2,
+          "total_cases": 13,
+          "positivity": 0.3030,
+          "total_recovered": 2
         }
       ]
     },
@@ -9542,6 +9783,14 @@
         },
         {
           "date": "2020/05/01",
+
+          "total_deaths": 2,
+          "total_cases": 6,
+          "positivity": 0.3529,
+          "total_recovered": 0
+        },
+        {
+          "date": "2020/05/02",
 
           "total_deaths": 2,
           "total_cases": 6,
@@ -9855,6 +10104,14 @@
           "total_cases": 1427,
           "positivity": 0.2347,
           "total_recovered": 253
+        },
+        {
+          "date": "2020/05/02",
+
+          "total_deaths": 54,
+          "total_cases": 1527,
+          "positivity": 0.2299,
+          "total_recovered": 272
         }
       ]
     }
