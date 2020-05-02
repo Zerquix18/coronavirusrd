@@ -1,6 +1,7 @@
 import React from 'react'
 import Cases from './case-charts'
 import NewByDay from './new-by-day'
+import Positivity from './positivity'
 
 const ProvinceCasesModal = ({ province, onClose }) => {
   return (
@@ -12,8 +13,10 @@ const ProvinceCasesModal = ({ province, onClose }) => {
           <button className="delete" aria-label="close" onClick={onClose}></button>
         </header>
         <section className="modal-card-body">
+
           <Cases cases={province.cases} />
           <hr />
+
           <NewByDay
             cases={province.cases.map((cases, i, array) => {
               if (i === 0) {
@@ -24,6 +27,11 @@ const ProvinceCasesModal = ({ province, onClose }) => {
 
               return { ...cases, new_cases, new_deaths };
             }).slice(1)} />
+
+          <hr />
+
+          <Positivity cases={province.cases.filter(day => typeof day.positivity === 'number')} />
+
         </section>
       </div>
     </div>
