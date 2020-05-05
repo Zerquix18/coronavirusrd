@@ -23,17 +23,38 @@ const NewByDay = ({ cases }) => {
          day: '%d %b %Y'
       }
     },
-    series: [{
-      name: "Nuevos casos",
-      data: cases.slice(-60).map(thisCase => {
-        const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
-        return {
-          x: new Date(thisCase.date),
-          y: thisCase.new_cases,
-          name: date,
-        }
-      }),
-    }]
+    series: [
+      {
+        name: "Nuevos casos",
+        data: cases.slice(-60).map(thisCase => {
+          const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
+          return {
+            x: new Date(thisCase.date),
+            y: thisCase.new_cases,
+            name: date,
+          }
+        }),
+      },
+      {
+        type: "line",
+        name: "Promedio movible de 3 días",
+        data: cases.map((thisCase, index, array) => {
+          const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
+          let average
+          if (index < 3) {
+            average = 0
+          } else {
+            average = (array.slice(index - 3, index).reduce((total, current) => total + current.new_cases, 0) / 3)
+          }
+
+          return {
+            x: new Date(thisCase.date),
+            y: parseFloat(average.toFixed(2)),
+            name: date,
+          }
+        }).slice(-60)
+      }
+    ]
   }
 
   const newDeathsOptions = {
@@ -52,17 +73,38 @@ const NewByDay = ({ cases }) => {
          day: '%d %b %Y'
       }
     },
-    series: [{
-      name: "Nuevas muertes",
-      data: cases.slice(-60).map(thisCase => {
-        const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
-        return {
-          x: new Date(thisCase.date),
-          y: thisCase.new_deaths,
-          name: date,
-        }
-      }),
-    }]
+    series: [
+      {
+        name: "Nuevas muertes",
+        data: cases.slice(-60).map(thisCase => {
+          const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
+          return {
+            x: new Date(thisCase.date),
+            y: thisCase.new_deaths,
+            name: date,
+          }
+        }),
+      },
+      {
+        type: "line",
+        name: "Promedio movible de 3 días",
+        data: cases.map((thisCase, index, array) => {
+          const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
+          let average
+          if (index < 3) {
+            average = 0
+          } else {
+            average = (array.slice(index - 3, index).reduce((total, current) => total + current.new_deaths, 0) / 3)
+          }
+
+          return {
+            x: new Date(thisCase.date),
+            y: parseFloat(average.toFixed(2)),
+            name: date,
+          }
+        }).slice(-60)
+      }
+    ]
   }
 
   return (
