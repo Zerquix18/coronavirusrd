@@ -29,7 +29,7 @@ const CaseLocation = ({ cases }) => {
         text: 'Ubicación de los casos activos'
     },
     tooltip: {
-        pointFormat: 'Porcentaje: <b>{point.percentage:.1f}%</b>'
+        pointFormat: 'Porcentaje: <b>{point.value} ({point.percentage:.1f}%)</b>'
     },
     accessibility: {
         point: {
@@ -42,7 +42,7 @@ const CaseLocation = ({ cases }) => {
             cursor: 'pointer',
             dataLabels: {
                 enabled: true,
-                format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                format: '<b>{point.name}</b>: {point.value} ({point.percentage:.1f} %)'
             }
         }
     },
@@ -54,11 +54,13 @@ const CaseLocation = ({ cases }) => {
           name: 'Aislamiento hospitalario',
           color: '#ff7063',
           y: (totalAtTheHospital / totalCases) * 100,
+          value: totalAtTheHospital,
         },
         {
           name: 'Aislamiento domiciliario',
           color: '#333233',
           y: (totalAtHome / totalCases) * 100,
+          value: totalAtHome,
         },
       ]
     }]
@@ -79,7 +81,7 @@ const CaseLocation = ({ cases }) => {
       }
     },
     tooltip: {
-      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      pointFormat: '{series.name}: <b>({point.value}) {point.percentage:.1f}%</b>'
     },
     plotOptions: {
       pie: {
@@ -87,7 +89,7 @@ const CaseLocation = ({ cases }) => {
           cursor: 'pointer',
           dataLabels: {
               enabled: true,
-              format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+              format: '<b>{point.name}</b>: ({point.value}) {point.percentage:.1f} %'
           }
       }
     },
@@ -116,13 +118,14 @@ const CaseLocation = ({ cases }) => {
         data: casesForDifference.slice(-60).map(item => {
           const date = format(new Date(item.date), 'dd/MM/yyyy')
 
-          const totalCases = item.total_cases
+          const totalCases = (item.total_at_home + item.total_at_the_hospital)
           const totalAtHome = item.total_at_home 
 
           return {
             x: new Date(item.date),
             y: Math.round((totalAtHome / totalCases) * 100),
             name: date,
+            value: totalAtHome,
           }
         }),
       },
@@ -132,13 +135,14 @@ const CaseLocation = ({ cases }) => {
         data: casesForDifference.slice(-60).map(item => {
           const date = format(new Date(item.date), 'dd/MM/yyyy')
 
-          const totalCases = item.total_cases
+          const totalCases = (item.total_at_home + item.total_at_the_hospital)
           const totalAtTheHospital = item.total_at_the_hospital
 
           return {
             x: new Date(item.date),
             y: Math.round((totalAtTheHospital / totalCases) * 100),
             name: date,
+            value: totalAtTheHospital,
           }
         }),
       },
