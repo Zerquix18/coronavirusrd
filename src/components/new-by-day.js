@@ -37,14 +37,14 @@ const NewByDay = ({ cases }) => {
       },
       {
         type: "line",
-        name: "Promedio movible de 3 días",
+        name: "Promedio movible de 7 días",
         data: cases.map((thisCase, index, array) => {
           const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
           let average
-          if (index < 3) {
+          if (index < 7) {
             average = 0
           } else {
-            average = (array.slice(index - 3, index).reduce((total, current) => total + current.new_cases, 0) / 3)
+            average = (array.slice(index - 7, index + 1).reduce((total, current) => total + current.new_cases, 0) / 7)
           }
 
           return {
@@ -87,14 +87,14 @@ const NewByDay = ({ cases }) => {
       },
       {
         type: "line",
-        name: "Promedio movible de 3 días",
+        name: "Promedio movible de 7 días",
         data: cases.map((thisCase, index, array) => {
           const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
           let average
-          if (index < 3) {
+          if (index < 7) {
             average = 0
           } else {
-            average = (array.slice(index - 3, index).reduce((total, current) => total + current.new_deaths, 0) / 3)
+            average = (array.slice(index - 7, index + 1).reduce((total, current) => total + current.new_deaths, 0) / 7)
           }
 
           return {
