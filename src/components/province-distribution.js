@@ -106,9 +106,9 @@ const ProvinceDistribution = ({ provinces }) => {
             const lastUpdate = province.cases[province.cases.length - 1]
             const secondToLast = province.cases[province.cases.length - 2]
 
-            const newCases = secondToLast ? lastUpdate.total_cases - secondToLast.total_cases : 0
-            const newDeaths = secondToLast ? lastUpdate.total_deaths - secondToLast.total_deaths : 0
-            const newRecovered = secondToLast ? lastUpdate.total_recovered - secondToLast.total_recovered : 0
+            const newCases = secondToLast ? lastUpdate.total_cases - secondToLast.total_cases : lastUpdate.total_cases
+            const newDeaths = secondToLast ? lastUpdate.total_deaths - secondToLast.total_deaths : lastUpdate.total_deaths
+            const newRecovered = secondToLast ? lastUpdate.total_recovered - secondToLast.total_recovered : lastUpdate.total_recovered
             const active = lastUpdate.total_cases - lastUpdate.total_deaths - lastUpdate.total_recovered
 
             total_cases += lastUpdate.total_cases

@@ -820,6 +820,17 @@
       "total_discarded": 47673,
       "total_at_the_hospital": 2066,
       "total_at_home": 3777
+    },
+    {
+      "date": "2020/05/22",
+      "total_cases": 13989,
+      "total_deaths": 456,
+      "new_cases": 332,
+      "new_deaths": 8,
+      "total_recovered": 7572,
+      "total_discarded": 49530,
+      "total_at_the_hospital": 2130,
+      "total_at_home": 3831
     }
   ]
 }
