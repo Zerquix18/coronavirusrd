@@ -42,6 +42,8 @@ const ProvinceDistribution = ({ provinces }) => {
   let total_recovered = 0
   let total_new_recovered = 0
   let total_active = 0
+  let total_tests = 0
+  let total_new_tests = 0
 
   return (
     <div>
@@ -63,7 +65,7 @@ const ProvinceDistribution = ({ provinces }) => {
         />
       </div>
 
-      <table className="table is-hoverable">
+      <table className="table is-hoverable is-narrow">
         <thead>
           <th onClick={() => setSort({ sortKey: 'province', sortDirection: 'up' })}>
             Provincia&nbsp;
@@ -71,7 +73,7 @@ const ProvinceDistribution = ({ provinces }) => {
             { sort.sortKey === 'province' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
           <th onClick={() => setSort({ sortKey: 'total_cases', sortDirection: 'up' })}>
-            Casos totales&nbsp;
+            Casos&nbsp;
             { sort.sortKey === 'total_cases' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
             { sort.sortKey === 'total_cases' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
@@ -81,12 +83,12 @@ const ProvinceDistribution = ({ provinces }) => {
             { sort.sortKey === 'new_cases' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
           <th onClick={() => setSort({ sortKey: 'total_deaths', sortDirection: 'up' })}>
-            Total muertes&nbsp;
+            Muertes&nbsp;
             { sort.sortKey === 'total_deaths' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
             { sort.sortKey === 'total_deaths' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
           <th>
-            Nuevas muertes&nbsp;
+            Muertes nuevas&nbsp;
             { sort.sortKey === 'new_deaths' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
             { sort.sortKey === 'new_deaths' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
@@ -94,10 +96,16 @@ const ProvinceDistribution = ({ provinces }) => {
             Recuperados
           </th>
           <th>
-            Nuevos recuperados
+            Recuperados nuevos
           </th>
           <th>
             Actualmente infectados
+          </th>
+          <th>
+            Pruebas
+          </th>
+          <th>
+            Pruebas nuevas
           </th>
         </thead>
         <tbody>
@@ -110,6 +118,7 @@ const ProvinceDistribution = ({ provinces }) => {
             const newDeaths = secondToLast ? lastUpdate.total_deaths - secondToLast.total_deaths : lastUpdate.total_deaths
             const newRecovered = secondToLast ? lastUpdate.total_recovered - secondToLast.total_recovered : lastUpdate.total_recovered
             const active = lastUpdate.total_cases - lastUpdate.total_deaths - lastUpdate.total_recovered
+            const newTests = secondToLast ? lastUpdate.total_tests - secondToLast.total_tests : lastUpdate.total_tests
 
             total_cases += lastUpdate.total_cases
             // sometimes they substract cases. don't know why.
@@ -119,6 +128,8 @@ const ProvinceDistribution = ({ provinces }) => {
             total_new_recovered += newRecovered
             total_recovered += lastUpdate.total_recovered
             total_active += active
+            total_tests += lastUpdate.total_tests
+            total_new_tests += newTests
 
             const openModal = () => {
               setShowingDetailsFor(i)
@@ -139,6 +150,8 @@ const ProvinceDistribution = ({ provinces }) => {
                 <td>{ lastUpdate.total_recovered }</td>
                 <td className={newRecovered ? 'is-success' : undefined}>{ newRecovered > 0 && `+${newRecovered}` }</td>
                 <td>{ active }</td>
+                <td>{ lastUpdate.total_tests }</td>
+                <td>{ newTests }</td>
               </tr>
             )
           })}
@@ -152,6 +165,8 @@ const ProvinceDistribution = ({ provinces }) => {
             <th>{ total_recovered }</th>
             <th>{ total_new_recovered }</th>
             <th>{ total_active }</th>
+            <th>{ total_tests }</th>
+            <th>{ total_new_tests }</th>
           </tr>
         </tbody>
       </table>
