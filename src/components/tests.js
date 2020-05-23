@@ -64,6 +64,15 @@ const Tests = ({ cases }) => {
     ]
   }
 
+  const testsPerDay = cases.map((day, i, array) => {
+    const yesterday = array[i - 1]
+    const yesterdayTests = yesterday ? yesterday.total_cases + (yesterday.total_discarded || 0) : 0
+    const todayTests = day.total_cases + (day.total_discarded || 0)
+
+    const diff = todayTests - yesterdayTests
+    return { date: day.date, tests: diff }
+  })
+
   const newTestsOptions = {
       chart: {
       type: 'column'
@@ -80,23 +89,40 @@ const Tests = ({ cases }) => {
          day: '%d %b %Y'
       }
     },
-    series: [{
-      name: "Nuevas pruebas",
-      data: cases.slice(-60).map((thisCase, i, array) => {
-        const yesterday = array[i - 1]
-        const yesterdayTests = yesterday ? yesterday.total_cases + (yesterday.total_discarded || 0) : 0
-        const todayTests = thisCase.total_cases + (thisCase.total_discarded || 0)
+    series: [
+      {
+        name: "Nuevas pruebas",
+        data: testsPerDay.map((day) => {
+          const date = format(new Date(day.date), 'dd/MM/yyyy')
+          const tests = day.tests
+          return {
+            x: new Date(day.date),
+            y: tests,
+            name: date,
+          }
+        }),
+      },
+      {
+        type: "line",
+        name: "Promedio movible de 7 dias",
+        data: testsPerDay.map((day, index, array) => {
+          const date = format(new Date(day.date), 'dd/MM/yyyy')
 
-        const diff = todayTests - yesterdayTests
+          let average
+          if (index < 7) {
+            average = 0
+          } else {
+            average = (array.slice(index - 7, index + 1).reduce((total, current) => total + current.tests, 0) / 7)
+          }
 
-        const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
-        return {
-          x: new Date(thisCase.date),
-          y: diff,
-          name: date,
-        }
-      }),
-    }]
+          return {
+            x: new Date(day.date),
+            y: Math.round(average),
+            name: date,
+          }
+        }),
+      },
+    ]
   }
 
   return (
