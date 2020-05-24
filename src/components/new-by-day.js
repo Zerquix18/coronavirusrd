@@ -107,9 +107,71 @@ const NewByDay = ({ cases }) => {
     ]
   }
 
+  const newRecoveriesPerDay = cases.filter(day => typeof day.total_recovered === 'number').map((thisCase, i, array) => {
+    const date = new Date(thisCase.date)
+    let new_recoveries
+    if (i === 0) {
+      new_recoveries = 0;
+    } else {
+      new_recoveries = thisCase.total_recovered - array[i - 1].total_recovered
+    }
+
+    return { date, new_recoveries }
+  })
+
+  const newRecoveriesOptions = {
+    chart: {
+    type: 'column'
+  },
+  title: {
+    text: 'Nuevos recuperados por día'
+  },
+  xAxis: {
+    accessibility: {
+        rangeDescription: 'Fecha'
+    },
+    type: 'datetime',
+    dateTimeLabelFormats: {
+       day: '%d %b %Y'
+    }
+  },
+  series: [
+    {
+      name: "Nuevos recuperados",
+      data: newRecoveriesPerDay.map((day) => {
+        const { date, new_recoveries } = day
+        return {
+          x: date,
+          y: new_recoveries,
+          name: format(date, 'dd/MM/yyyy'),
+        }
+      }).slice(-60),
+    },
+    {
+      type: "line",
+      name: "Promedio movible de 7 días",
+      data: newRecoveriesPerDay.map((thisCase, index, array) => {
+        const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
+        let average
+        if (index < 7) {
+          average = 0
+        } else {
+          average = (array.slice(index - 7, index + 1).reduce((total, current) => total + current.new_recoveries, 0) / 7)
+        }
+
+        return {
+          x: thisCase.date,
+          y: parseFloat(average.toFixed(2)),
+          name: date,
+        }
+      }).slice(-60)
+    }
+  ]
+}
+
   return (
     <div>
-      <h2 className="title">Nuevos casos / Nuevas muertes por día</h2>
+      <h2 className="title">Nuevos casos/muertes/recuperados por día</h2>
 
       <div className="columns">
         <div className="column is-half">
@@ -122,6 +184,15 @@ const NewByDay = ({ cases }) => {
           <HighchartsReact
             highcharts={Highcharts}
             options={newDeathsOptions}
+          />
+        </div>
+      </div>
+
+      <div className="columns">
+        <div className="column is-half">
+          <HighchartsReact
+            highcharts={Highcharts}
+            options={newRecoveriesOptions}
           />
         </div>
       </div>
