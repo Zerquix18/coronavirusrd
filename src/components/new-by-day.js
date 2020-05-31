@@ -26,7 +26,7 @@ const NewByDay = ({ cases }) => {
     series: [
       {
         name: "Nuevos casos",
-        data: cases.slice(-60).map(thisCase => {
+        data: cases.map(thisCase => {
           const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
           return {
             x: new Date(thisCase.date),
@@ -52,7 +52,7 @@ const NewByDay = ({ cases }) => {
             y: parseFloat(average.toFixed(2)),
             name: date,
           }
-        }).slice(-60)
+        })
       }
     ]
   }
@@ -76,7 +76,7 @@ const NewByDay = ({ cases }) => {
     series: [
       {
         name: "Nuevas muertes",
-        data: cases.slice(-60).map(thisCase => {
+        data: cases.map(thisCase => {
           const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
           return {
             x: new Date(thisCase.date),
@@ -102,7 +102,7 @@ const NewByDay = ({ cases }) => {
             y: parseFloat(average.toFixed(2)),
             name: date,
           }
-        }).slice(-60)
+        })
       }
     ]
   }
@@ -145,7 +145,7 @@ const NewByDay = ({ cases }) => {
           y: new_recoveries,
           name: format(date, 'dd/MM/yyyy'),
         }
-      }).slice(-60),
+      }),
     },
     {
       type: "line",
@@ -164,7 +164,7 @@ const NewByDay = ({ cases }) => {
           y: parseFloat(average.toFixed(2)),
           name: date,
         }
-      }).slice(-60)
+      })
     }
   ]
 }

@@ -38,7 +38,7 @@ const GrowthFactor = ({ cases }) => {
           y,
           name: date,
         }
-      }).slice(-60),
+      }),
     }]
   }
 

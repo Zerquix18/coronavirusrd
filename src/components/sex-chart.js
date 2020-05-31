@@ -101,7 +101,7 @@ const SexChart = ({ sexData }) => {
     series: [
       {
         name: "Masculino",
-        data: sexData.slice(-30).map(thisCase => {
+        data: sexData.map(thisCase => {
           const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
           return {
             x: new Date(thisCase.date),
@@ -113,7 +113,7 @@ const SexChart = ({ sexData }) => {
       {
         name: "Femenino",
         color: "#fab9c8",
-        data: sexData.slice(-30).map(thisCase => {
+        data: sexData.map(thisCase => {
           const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
           return {
             x: new Date(thisCase.date),

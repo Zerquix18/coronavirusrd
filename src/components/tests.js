@@ -28,7 +28,7 @@ const Tests = ({ cases }) => {
       {
         name: "Pruebas totales",
         color: '#1cfbff',
-        data: cases.slice(-60).map(thisCase => {
+        data: cases.map(thisCase => {
           const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
           return {
             x: new Date(thisCase.date),
@@ -40,7 +40,7 @@ const Tests = ({ cases }) => {
       {
         name: "Pruebas positivas",
         color: '#fcba03',
-        data: cases.slice(-60).map(thisCase => {
+        data: cases.map(thisCase => {
           const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
           return {
             x: new Date(thisCase.date),
@@ -52,7 +52,7 @@ const Tests = ({ cases }) => {
       {
         name: "Pruebas negativas",
         color: '#ff0000',
-        data: cases.slice(-60).map(thisCase => {
+        data: cases.map(thisCase => {
           const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
           return {
             x: new Date(thisCase.date),

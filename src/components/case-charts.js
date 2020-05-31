@@ -33,7 +33,7 @@ const CaseCharts = ({ cases }) => {
     series: [{
       name: "Casos",
       color: "#fcba03",
-      data: cases.slice(-60).map(thisCase => {
+      data: cases.map(thisCase => {
         const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
         return {
           x: new Date(thisCase.date),
@@ -66,7 +66,7 @@ const CaseCharts = ({ cases }) => {
     series: [{
       name: "Muertes",
       color: '#ff0000',
-      data: cases.slice(-60).map(thisCase => {
+      data: cases.map(thisCase => {
         const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
         return {
           x: new Date(thisCase.date),
@@ -99,7 +99,7 @@ const CaseCharts = ({ cases }) => {
     series: [{
       name: "Recuperados",
       color: '#5bff24',
-      data: cases.slice(-30).map(thisCase => {
+      data: cases.map(thisCase => {
         const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
         return {
           x: new Date(thisCase.date),
@@ -132,7 +132,7 @@ const CaseCharts = ({ cases }) => {
     series: [{
       name: "Casos activos",
       color: '#1cfbff',
-      data: cases.slice(-60).map(thisCase => {
+      data: cases.map(thisCase => {
         const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
         return {
           x: new Date(thisCase.date),

@@ -115,7 +115,7 @@ const CaseLocation = ({ cases }) => {
       {
         name: "Aislamiento domiciliario",
         color: '#333233',
-        data: casesForDifference.slice(-60).map(item => {
+        data: casesForDifference.map(item => {
           const date = format(new Date(item.date), 'dd/MM/yyyy')
 
           const totalCases = (item.total_at_home + item.total_at_the_hospital)
@@ -132,7 +132,7 @@ const CaseLocation = ({ cases }) => {
       {
         name: "Aislamiento hospitalario",
         color: '#ff7063',
-        data: casesForDifference.slice(-60).map(item => {
+        data: casesForDifference.map(item => {
           const date = format(new Date(item.date), 'dd/MM/yyyy')
 
           const totalCases = (item.total_at_home + item.total_at_the_hospital)

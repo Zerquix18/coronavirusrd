@@ -35,7 +35,7 @@ const Positivity = ({ cases }) => {
     },
     series: [{
       name: "Positividad",
-      data: cases.slice(-60).map(thisCase => {
+      data: cases.map(thisCase => {
         const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
         return {
           x: new Date(thisCase.date),
