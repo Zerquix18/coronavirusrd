@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import DaySelector from "./day-selector"
 import ProvinceCasesModal from './province-cases-modal'
+import regions from '../regions'
 
 const ProvinceDistribution = ({ provinces }) => {
   const [filter, setFilter] = useState('')
   const [sort, setSort] = useState({ sortKey: 'totalCases', sortDirection: 'up' })
   const [fromToday, setToday] = useState(true)
   const [showingDetailsFor, setShowingDetailsFor] = useState(-1) // index
+  const [region, setRegion] = useState(null);
 
   let provincesToDisplay = [...provinces]
   if (!fromToday) {
@@ -15,6 +17,10 @@ const ProvinceDistribution = ({ provinces }) => {
       cases.pop();
       return { ...province, cases }
     })
+  }
+
+  if (region) {
+    provincesToDisplay = provincesToDisplay.filter(province => regions[region].includes(province.name))
   }
 
   provincesToDisplay = provincesToDisplay.filter(province => {
@@ -93,7 +99,7 @@ const ProvinceDistribution = ({ provinces }) => {
         setValue={setToday}
       />
 
-      <div style={{ maxWidth: '300px' }}>
+      <div style={{ maxWidth: '300px', float: 'right' }}>
         <input
           className="input"
           type="text"
@@ -102,6 +108,25 @@ const ProvinceDistribution = ({ provinces }) => {
           onChange={(e) => setFilter(e.target.value)}
         />
       </div>
+
+      <div class="tabs">
+        <ul>
+          <li className={region === null ? 'is-active' : undefined}>
+            <a onClick={() => { setRegion(null) }}>
+              Todas
+            </a>
+          </li>
+          { Object.keys(regions).map(reg => {
+            return (
+              <li key={reg} className={region === reg ? 'is-active' : undefined}>
+                <a onClick={() => setRegion(reg) }>{ reg }</a>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+
+      <br />
 
       <table className="table is-hoverable is-narrow">
         <thead>

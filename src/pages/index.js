@@ -13,6 +13,7 @@ import GrowthFactor from "../components/growth-factor"
 import Updates from '../components/updates'
 import CaseLocation from '../components/case-location'
 import Tests from "../components/tests"
+import ProgressionByProvince from "../components/progression"
 
 const IndexPage = () => {
 
@@ -97,6 +98,10 @@ const IndexPage = () => {
       <hr />
 
       <Tests cases={allCases} />
+
+      <hr />
+
+      <ProgressionByProvince provinces={allProvinces} />
 
       <hr />
 
