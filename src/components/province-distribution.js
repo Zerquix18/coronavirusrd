@@ -4,7 +4,7 @@ import ProvinceCasesModal from './province-cases-modal'
 
 const ProvinceDistribution = ({ provinces }) => {
   const [filter, setFilter] = useState('')
-  const [sort, setSort] = useState({ sortKey: 'total_cases', sortDirection: 'up' })
+  const [sort, setSort] = useState({ sortKey: 'totalCases', sortDirection: 'up' })
   const [fromToday, setToday] = useState(true)
   const [showingDetailsFor, setShowingDetailsFor] = useState(-1) // index
 
@@ -25,16 +25,6 @@ const ProvinceDistribution = ({ provinces }) => {
     return province.name.toLowerCase().includes(filter.toLowerCase())
   })
 
-  provincesToDisplay.sort((a, b) => {
-    if (sort.sortKey === 'province') {
-      return a.name.localeCompare(b.name)
-    }
-    const aTotalCases = a.cases[a.cases.length - 1][sort.sortKey]
-    const bTotalCases = b.cases[b.cases.length - 1][sort.sortKey]
-
-    return bTotalCases - aTotalCases
-  })
-
   let total_cases = 0
   let total_new_cases = 0
   let total_deaths = 0
@@ -44,6 +34,54 @@ const ProvinceDistribution = ({ provinces }) => {
   let total_active = 0
   let total_tests = 0
   let total_new_tests = 0
+
+  const provincesForTable = provincesToDisplay.map(province => {
+    const lastUpdate = province.cases[province.cases.length - 1]
+    const secondToLast = province.cases[province.cases.length - 2]
+
+    const name = province.name
+    const newCases = secondToLast ? lastUpdate.total_cases - secondToLast.total_cases : lastUpdate.total_cases
+    const newDeaths = secondToLast ? lastUpdate.total_deaths - secondToLast.total_deaths : lastUpdate.total_deaths
+    const newRecovered = secondToLast ? lastUpdate.total_recovered - secondToLast.total_recovered : lastUpdate.total_recovered
+    const active = lastUpdate.total_cases - lastUpdate.total_deaths - lastUpdate.total_recovered
+    const newTests = secondToLast ? lastUpdate.total_tests - secondToLast.total_tests : lastUpdate.total_tests
+    const totalCases = lastUpdate.total_cases
+    const totalDeaths = lastUpdate.total_deaths;
+    const totalRecovered = lastUpdate.total_recovered
+    const totalTests = lastUpdate.total_tests
+
+    total_cases += lastUpdate.total_cases
+    // sometimes they substract cases. don't know why.
+    total_new_cases += newCases
+    total_deaths += lastUpdate.total_deaths
+    total_new_deaths += newDeaths
+    total_new_recovered += newRecovered
+    total_recovered += lastUpdate.total_recovered
+    total_active += active
+    total_tests += lastUpdate.total_tests
+    total_new_tests += newTests
+
+    return {
+      name,
+      newCases,
+      newDeaths,
+      newRecovered,
+      active,
+      newTests,
+      totalCases,
+      totalDeaths,
+      totalRecovered,
+      totalTests,
+    }
+  })
+
+  provincesForTable.sort((a, b) => {
+    if (sort.sortKey === 'name') {
+      return a.name.localeCompare(b.name)
+    }
+
+    return b[sort.sortKey] - a[sort.sortKey]
+  })
 
   return (
     <div>
@@ -67,69 +105,71 @@ const ProvinceDistribution = ({ provinces }) => {
 
       <table className="table is-hoverable is-narrow">
         <thead>
-          <th onClick={() => setSort({ sortKey: 'province', sortDirection: 'up' })}>
+          <th style={{ cursor: 'pointer' }} onClick={() => setSort({ sortKey: 'names', sortDirection: 'up' })}>
             Provincia&nbsp;
-            { sort.sortKey === 'province' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
-            { sort.sortKey === 'province' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
+            { sort.sortKey === 'names' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'names' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
-          <th onClick={() => setSort({ sortKey: 'total_cases', sortDirection: 'up' })}>
+          <th style={{ cursor: 'pointer' }} onClick={() => setSort({ sortKey: 'totalCases', sortDirection: 'up' })}>
             Casos&nbsp;
-            { sort.sortKey === 'total_cases' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
-            { sort.sortKey === 'total_cases' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
+            { sort.sortKey === 'totalCases' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'totalCases' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
-          <th>
+          <th style={{ cursor: 'pointer' }} onClick={() => setSort({ sortKey: 'newCases', sortDirection: 'up' })}>
             Casos nuevos&nbsp;
-            { sort.sortKey === 'new_cases' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
-            { sort.sortKey === 'new_cases' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
+            { sort.sortKey === 'newCases' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'newCases' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
-          <th onClick={() => setSort({ sortKey: 'total_deaths', sortDirection: 'up' })}>
+          <th style={{ cursor: 'pointer' }} onClick={() => setSort({ sortKey: 'totalDeaths', sortDirection: 'up' })}>
             Muertes&nbsp;
-            { sort.sortKey === 'total_deaths' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
-            { sort.sortKey === 'total_deaths' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
+            { sort.sortKey === 'totalDeaths' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'totalDeaths' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
-          <th>
+          <th style={{ cursor: 'pointer' }} onClick={() => setSort({ sortKey: 'newDeaths', sortDirection: 'up' })}>
             Muertes nuevas&nbsp;
-            { sort.sortKey === 'new_deaths' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
-            { sort.sortKey === 'new_deaths' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
+            { sort.sortKey === 'newDeaths' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'newDeaths' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
-          <th>
+          <th style={{ cursor: 'pointer' }} onClick={() => setSort({ sortKey: 'totalRecovered', sortDirection: 'up' })}>
             Recuperados
+            { sort.sortKey === 'totalRecovered' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'totalRecovered' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
-          <th>
+          <th style={{ cursor: 'pointer' }} onClick={() => setSort({ sortKey: 'newRecovered', sortDirection: 'up' })}>
             Recuperados nuevos
+            { sort.sortKey === 'newRecovered' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'newRecovered' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
-          <th>
+          <th style={{ cursor: 'pointer' }} onClick={() => setSort({ sortKey: 'active', sortDirection: 'up' })}>
             Actualmente infectados
+            { sort.sortKey === 'active' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'active' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
-          <th>
+          <th style={{ cursor: 'pointer' }} onClick={() => setSort({ sortKey: 'totalTests', sortDirection: 'up' })}>
             Pruebas
+            { sort.sortKey === 'totalTests' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'totalTests' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
-          <th>
+          <th style={{ cursor: 'pointer' }} onClick={() => setSort({ sortKey: 'newTests', sortDirection: 'up' })}>
             Pruebas nuevas
+            { sort.sortKey === 'newTests' && sort.sortDirection === 'up' && <span><i className="fa fa-arrow-up" /></span>}
+            { sort.sortKey === 'newTests' && sort.sortDirection === 'down' && <span><i className="fa fa-arrow-down" /></span>}
           </th>
         </thead>
         <tbody>
-          { provincesToDisplay.map((province, i) => {
-            const name = province.name
-            const lastUpdate = province.cases[province.cases.length - 1]
-            const secondToLast = province.cases[province.cases.length - 2]
-
-            const newCases = secondToLast ? lastUpdate.total_cases - secondToLast.total_cases : lastUpdate.total_cases
-            const newDeaths = secondToLast ? lastUpdate.total_deaths - secondToLast.total_deaths : lastUpdate.total_deaths
-            const newRecovered = secondToLast ? lastUpdate.total_recovered - secondToLast.total_recovered : lastUpdate.total_recovered
-            const active = lastUpdate.total_cases - lastUpdate.total_deaths - lastUpdate.total_recovered
-            const newTests = secondToLast ? lastUpdate.total_tests - secondToLast.total_tests : lastUpdate.total_tests
-
-            total_cases += lastUpdate.total_cases
-            // sometimes they substract cases. don't know why.
-            total_new_cases += newCases
-            total_deaths += lastUpdate.total_deaths
-            total_new_deaths += newDeaths
-            total_new_recovered += newRecovered
-            total_recovered += lastUpdate.total_recovered
-            total_active += active
-            total_tests += lastUpdate.total_tests
-            total_new_tests += newTests
+          { provincesForTable.map((province, i) => {
+            const {
+              name,
+              newCases,
+              newDeaths,
+              newRecovered,
+              active,
+              newTests,
+              totalCases,
+              totalDeaths,
+              totalRecovered,
+              totalTests,
+            } = province
 
             const openModal = () => {
               setShowingDetailsFor(i)
@@ -140,17 +180,17 @@ const ProvinceDistribution = ({ provinces }) => {
                 <td>
                   <a href="javascript:void(0)" onClick={openModal}>{name}</a>
                 </td>
-                <td>{ lastUpdate.total_cases }</td>
+                <td>{ totalCases }</td>
                 <td className={newCases > 0 ? 'is-warning' : undefined}>
                   { newCases > 0 && `+${newCases}` }
                   { newCases < 0 && `${newCases}` }
                 </td>
-                <td>{ lastUpdate.total_deaths }</td>
+                <td>{ totalDeaths }</td>
                 <td className={newDeaths ? 'is-danger' : undefined}>{ newDeaths > 0 && `+${newDeaths}` }</td>
-                <td>{ lastUpdate.total_recovered }</td>
+                <td>{ totalRecovered }</td>
                 <td className={newRecovered ? 'is-success' : undefined}>{ newRecovered > 0 && `+${newRecovered}` }</td>
                 <td>{ active }</td>
-                <td>{ lastUpdate.total_tests }</td>
+                <td>{ totalTests }</td>
                 <td>{ newTests }</td>
               </tr>
             )
