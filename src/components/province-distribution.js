@@ -7,7 +7,7 @@ const ProvinceDistribution = ({ provinces }) => {
   const [filter, setFilter] = useState('')
   const [sort, setSort] = useState({ sortKey: 'totalCases', sortDirection: 'up' })
   const [fromToday, setToday] = useState(true)
-  const [showingDetailsFor, setShowingDetailsFor] = useState(-1) // index
+  const [showingDetailsFor, setShowingDetailsFor] = useState(null)
   const [region, setRegion] = useState(null);
 
   let provincesToDisplay = [...provinces]
@@ -197,7 +197,8 @@ const ProvinceDistribution = ({ provinces }) => {
             } = province
 
             const openModal = () => {
-              setShowingDetailsFor(i)
+              const provinceForDetails = provincesToDisplay.find(province2 => province2.name === province.name)
+              setShowingDetailsFor(provinceForDetails)
             }
 
             return (
@@ -236,11 +237,11 @@ const ProvinceDistribution = ({ provinces }) => {
         </tbody>
       </table>
 
-      { showingDetailsFor > -1 && (
+      { showingDetailsFor !== null && (
         <ProvinceCasesModal
-          province={provincesToDisplay[showingDetailsFor]}
+          province={showingDetailsFor}
           onClose={() => {
-            setShowingDetailsFor(-1)
+            setShowingDetailsFor(null)
           }}
         />
       )}
