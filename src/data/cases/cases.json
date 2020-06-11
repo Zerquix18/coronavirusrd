@@ -1040,6 +1040,17 @@
       "total_discarded": 79227,
       "total_at_the_hospital": 2609,
       "total_at_home": 5331
+    },
+    {
+      "date": "2020/06/11",
+      "total_cases": 21437,
+      "total_deaths": 561,
+      "new_cases": 629,
+      "new_deaths": 11,
+      "total_recovered": 12541,
+      "total_discarded": 81063,
+      "total_at_the_hospital": 2788,
+      "total_at_home": 5547
     }
   ]
 }
