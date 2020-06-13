@@ -1,4 +1,5 @@
 import React from 'react'
+import format from 'date-fns/format'
 
 const Updates = ({ updates }) => {
   updates.sort((a, b) => {
@@ -12,9 +13,10 @@ const Updates = ({ updates }) => {
         <div className="column is-half content">
           <ul>
             { updates.map(update => {
+              const date = format(new Date(update.date), 'dd/MM/yyyy')
               return (
                 <li key={update.link}>
-                  <a href={update.link}>{ update.title }</a>
+                  <a href={update.link}>[{ date }] { update.title }</a>
                 </li>
               )
             })}
