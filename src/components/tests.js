@@ -71,7 +71,7 @@ const Tests = ({ cases }) => {
 
     const diff = todayTests - yesterdayTests
     return { date: day.date, tests: diff }
-  })
+  }).slice(1)
 
   const newTestsOptions = {
       chart: {
@@ -110,7 +110,7 @@ const Tests = ({ cases }) => {
 
           let average
           if (index < 7) {
-            average = 0
+            average = (array.slice(0, index + 1).reduce((total, current) => total + current.tests, 0) / (index + 1))
           } else {
             average = (array.slice(index - 7, index + 1).reduce((total, current) => total + current.tests, 0) / 7)
           }

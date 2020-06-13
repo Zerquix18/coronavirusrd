@@ -3,6 +3,7 @@ import Cases from './case-charts'
 import NewByDay from './new-by-day'
 import Positivity from './positivity'
 import GrowthFactor from './growth-factor'
+import Tests from './tests'
 
 const ProvinceCasesModal = ({ province, onClose }) => {
   return (
@@ -28,6 +29,14 @@ const ProvinceCasesModal = ({ province, onClose }) => {
 
               return { ...cases, new_cases, new_deaths };
             }).slice(1)} />
+
+          
+          <hr />
+          
+          <Tests cases={province.cases.filter(cases => cases.total_tests !== null).map(cases => {
+            cases.total_discarded = cases.total_tests - cases.total_cases
+            return cases
+          })} />
 
           <hr />
 
