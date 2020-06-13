@@ -1062,6 +1062,17 @@
       "total_discarded": 83008,
       "total_at_the_hospital": 2835,
       "total_at_home": 5851
+    },
+    {
+      "date": "2020/06/13",
+      "total_cases": 22572,
+      "total_deaths": 577,
+      "new_cases": 564,
+      "new_deaths": 9,
+      "total_recovered": 13084,
+      "total_discarded": 84603,
+      "total_at_the_hospital": 2739,
+      "total_at_home": 6172
     }
   ]
 }
