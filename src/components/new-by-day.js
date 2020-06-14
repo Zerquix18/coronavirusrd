@@ -42,7 +42,7 @@ const NewByDay = ({ cases }) => {
           const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
           let average
           if (index < 7) {
-            average = 0
+            average = (array.slice(0, index + 1).reduce((total, current) => total + current.new_cases, 0) / (index + 1))
           } else {
             average = (array.slice(index - 7, index + 1).reduce((total, current) => total + current.new_cases, 0) / 7)
           }
@@ -92,7 +92,7 @@ const NewByDay = ({ cases }) => {
           const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
           let average
           if (index < 7) {
-            average = 0
+            average = (array.slice(0, index + 1).reduce((total, current) => total + current.new_deaths, 0) / (index + 1))
           } else {
             average = (array.slice(index - 7, index + 1).reduce((total, current) => total + current.new_deaths, 0) / 7)
           }
@@ -154,7 +154,7 @@ const NewByDay = ({ cases }) => {
         const date = format(new Date(thisCase.date), 'dd/MM/yyyy')
         let average
         if (index < 7) {
-          average = 0
+          average = (array.slice(0, index + 1).reduce((total, current) => total + current.new_recoveries, 0) / (index + 1))
         } else {
           average = (array.slice(index - 7, index + 1).reduce((total, current) => total + current.new_recoveries, 0) / 7)
         }
