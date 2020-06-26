@@ -1205,6 +1205,17 @@
       "total_discarded": 106828,
       "total_at_the_hospital": 2744,
       "total_at_home": 9476
+    },
+    {
+      "date": "2020/06/26",
+      "total_cases": 29764,
+      "total_deaths": 712,
+      "new_cases": 623,
+      "new_deaths": 14,
+      "total_recovered": 16357,
+      "total_discarded": 108934,
+      "total_at_the_hospital": 2862,
+      "total_at_home": 9833
     }
   ]
 }
