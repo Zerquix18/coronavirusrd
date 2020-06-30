@@ -1237,7 +1237,7 @@
       "total_recovered": 17142,
       "total_discarded": 114687,
       "total_at_the_hospital": 3042,
-      "total_at_home": 17142
+      "total_at_home": 10463
     },
     {
       "date": "2020/06/29",
@@ -1248,7 +1248,18 @@
       "total_recovered": 17280,
       "total_discarded": 116392,
       "total_at_the_hospital": 3058,
-      "total_at_home": 17280
+      "total_at_home": 10745
+    },
+    {
+      "date": "2020/06/30",
+      "total_cases": 32568,
+      "total_deaths": 747,
+      "new_cases": 752,
+      "new_deaths": 14,
+      "total_recovered": 17580,
+      "total_discarded": 118351,
+      "total_at_the_hospital": 3241,
+      "total_at_home": 11000
     }
   ]
 }
