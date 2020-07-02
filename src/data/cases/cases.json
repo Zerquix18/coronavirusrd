@@ -1271,6 +1271,17 @@
       "total_discarded": 120742,
       "total_at_the_hospital": 3323,
       "total_at_home": 11406
+    },
+    {
+      "date": "2020/07/02",
+      "total_cases": 34197,
+      "total_deaths": 765,
+      "new_cases": 810,
+      "new_deaths": 11,
+      "total_recovered": 18141,
+      "total_discarded": 122848,
+      "total_at_the_hospital": 3428,
+      "total_at_home": 11863
     }
   ]
 }
