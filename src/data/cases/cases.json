@@ -1310,11 +1310,22 @@
       "total_cases": 37425,
       "total_deaths": 794,
       "new_cases": 1241,
-      "new_deaths": 794,
+      "new_deaths": 8,
       "total_recovered": 18943,
       "total_discarded": 129947,
       "total_at_the_hospital": 3830,
       "total_at_home": 13858
+    },
+    {
+      "date": "2020/07/06",
+      "total_cases": 38128,
+      "total_deaths": 794,
+      "new_cases": 703,
+      "new_deaths": 10,
+      "total_recovered": 19489,
+      "total_discarded": 131871,
+      "total_at_the_hospital": 3803,
+      "total_at_home": 14032
     }
   ]
 }
