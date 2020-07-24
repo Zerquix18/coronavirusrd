@@ -1508,11 +1508,22 @@
       "total_cases": 57615,
       "total_deaths": 1006,
       "new_cases": 1572,
-      "new_deaths": 11,
+      "new_deaths": 1,
       "total_recovered": 26905,
       "total_discarded": 169078,
       "total_at_the_hospital":  3636,
       "total_at_home": 26068
+    },
+    {
+      "date": "2020/07/24",
+      "total_cases": 59077,
+      "total_deaths": 1036,
+      "new_cases": 1462,
+      "new_deaths": 30,
+      "total_recovered": 27625,
+      "total_discarded": 171577,
+      "total_at_the_hospital":  3502,
+      "total_at_home": 26914
     }
   ]
 }
