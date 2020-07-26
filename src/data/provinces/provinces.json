@@ -5548,7 +5548,7 @@
         },
         {
           "date": "2020/07/25",
-          "total_tests": 7964,
+          "total_tests": 8035,
           "total_cases": 1301,
           "positivity": 0.1835,
           "total_recovered": 785,
