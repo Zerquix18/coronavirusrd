@@ -27768,7 +27768,7 @@
           "total_cases": 83,
           "positivity": 0.4027,
           "total_recovered": 28,
-          "total_deaths": 0
+          "total_deaths": 4
         },
         {
           "date": "2020/07/25",
@@ -27776,7 +27776,7 @@
           "total_cases": 83,
           "positivity": 0.40,
           "total_recovered": 31,
-          "total_deaths": 0
+          "total_deaths": 4
         }
       ]
     },
