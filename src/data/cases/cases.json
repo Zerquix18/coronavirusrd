@@ -1549,13 +1549,24 @@
     {
       "date": "2020/07/27",
       "total_cases": 64156,
-      "total_deaths": 1248,
+      "total_deaths": 1083,
       "new_cases": 1248,
       "new_deaths": 20,
       "total_recovered": 30204,
       "total_discarded": 180487,
       "total_at_the_hospital": 4207,
-      "total_at_home": 30204
+      "total_at_home": 28662
+    },
+    {
+      "date": "2020/07/28",
+      "total_cases": 64690,
+      "total_deaths": 1101,
+      "new_cases": 534,
+      "new_deaths": 18,
+      "total_recovered": 32014,
+      "total_discarded": 182263,
+      "total_at_the_hospital": 4192,
+      "total_at_home": 27383
     }
   ]
 }
