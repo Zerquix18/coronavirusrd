@@ -81,7 +81,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Inicio" />
-      <strong>Última actualización: </strong>29 de Julio, 1:11PM
+      <strong>Última actualización: </strong>30 de Julio, 2:51PM
 
       <hr />
 
