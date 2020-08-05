@@ -1622,6 +1622,17 @@
       "total_discarded": 194601,
       "total_at_the_hospital":  6053,
       "total_at_home": 26768
+    },
+    {
+      "date": "2020/08/03",
+      "total_cases": 73117,
+      "total_deaths": 1183,
+      "new_cases": 874,
+      "new_deaths": 5,
+      "total_recovered": 38824,
+      "total_discarded": 195412,
+      "total_at_the_hospital":  6262,
+      "total_at_home": 26848
     }
   ]
 }
