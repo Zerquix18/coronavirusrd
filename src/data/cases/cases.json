@@ -1609,7 +1609,7 @@
       "new_deaths": 10,
       "total_recovered": 37509,
       "total_discarded": 192871,
-      "total_at_the_hospital":  5871,
+      "total_at_the_hospital": 5871,
       "total_at_home": 26865
     },
     {
@@ -1620,7 +1620,7 @@
       "new_deaths": 8,
       "total_recovered": 38244,
       "total_discarded": 194601,
-      "total_at_the_hospital":  6053,
+      "total_at_the_hospital": 6053,
       "total_at_home": 26768
     },
     {
@@ -1631,7 +1631,7 @@
       "new_deaths": 5,
       "total_recovered": 38824,
       "total_discarded": 195412,
-      "total_at_the_hospital":  6262,
+      "total_at_the_hospital": 6262,
       "total_at_home": 26848
     },
     {
@@ -1642,7 +1642,7 @@
       "new_deaths": 30,
       "total_recovered": 39305,
       "total_discarded": 199406,
-      "total_at_the_hospital":  6167,
+      "total_at_the_hospital": 6167,
       "total_at_home": 27620
     },
     {
@@ -1655,6 +1655,17 @@
       "total_discarded": 202775,
       "total_at_the_hospital": 6506,
       "total_at_home": 27810
+    },
+    {
+      "date": "2020/08/06",
+      "total_cases": 76536,
+      "total_deaths": 1246,
+      "new_cases": 876,
+      "new_deaths": 24,
+      "total_recovered": 40539,
+      "total_discarded": 205390,
+      "total_at_the_hospital": 6551,
+      "total_at_home": 28200
     }
   ]
 }
