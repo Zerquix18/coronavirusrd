@@ -1035,6 +1035,14 @@
           "positivity": 0.2831,
           "total_recovered": 12685,
           "total_deaths": 244
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 92618,
+          "total_cases": 22599,
+          "positivity": 0.2786,
+          "total_recovered": 13079,
+          "total_deaths": 248
         }
       ]
     },
@@ -2073,6 +2081,14 @@
           "positivity": 0.4579,
           "total_recovered": 766,
           "total_deaths": 14
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 4505,
+          "total_cases": 1468,
+          "positivity": 0.4495,
+          "total_recovered": 801,
+          "total_deaths": 14
         }
       ]
     },
@@ -3109,6 +3125,14 @@
           "total_tests": 499,
           "total_cases": 286,
           "positivity": 0.8872,
+          "total_recovered": 36,
+          "total_deaths": 3
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 499,
+          "total_cases": 286,
+          "positivity": 0.9286,
           "total_recovered": 36,
           "total_deaths": 3
         }
@@ -4149,6 +4173,14 @@
           "positivity": 0.5135,
           "total_recovered": 504,
           "total_deaths": 10
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 3708,
+          "total_cases": 1257,
+          "positivity": 0.5942,
+          "total_recovered": 505,
+          "total_deaths": 10
         }
       ]
     },
@@ -5185,6 +5217,14 @@
           "total_tests": 300,
           "total_cases": 128,
           "positivity": 0.6146,
+          "total_recovered": 76,
+          "total_deaths": 4
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 300,
+          "total_cases": 128,
+          "positivity": 0.7396,
           "total_recovered": 76,
           "total_deaths": 4
         }
@@ -6225,6 +6265,14 @@
           "positivity": 0.2548,
           "total_recovered": 913,
           "total_deaths": 93
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 9818,
+          "total_cases": 1804,
+          "positivity": 0.255,
+          "total_recovered": 926,
+          "total_deaths": 93
         }
       ]
     },
@@ -7261,6 +7309,14 @@
           "total_tests": 540,
           "total_cases": 196,
           "positivity": 0.4885,
+          "total_recovered": 96,
+          "total_deaths": 1
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 542,
+          "total_cases": 196,
+          "positivity": 0.4602,
           "total_recovered": 96,
           "total_deaths": 1
         }
@@ -8301,6 +8357,14 @@
           "positivity": 0.6755,
           "total_recovered": 90,
           "total_deaths": 1
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 552,
+          "total_cases": 273,
+          "positivity": 0.6951,
+          "total_recovered": 90,
+          "total_deaths": 2
         }
       ]
     },
@@ -9339,6 +9403,14 @@
           "positivity": 0.5588,
           "total_recovered": 781,
           "total_deaths": 39
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 3696,
+          "total_cases": 1374,
+          "positivity": 0.5402,
+          "total_recovered": 787,
+          "total_deaths": 39
         }
       ]
     },
@@ -10375,6 +10447,14 @@
           "total_tests": 270,
           "total_cases": 155,
           "positivity": 0.6909,
+          "total_recovered": 113,
+          "total_deaths": 3
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 270,
+          "total_cases": 155,
+          "positivity": 0.3273,
           "total_recovered": 113,
           "total_deaths": 3
         }
@@ -11415,6 +11495,14 @@
           "positivity": 0.3464,
           "total_recovered": 1323,
           "total_deaths": 14
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 10733,
+          "total_cases": 2856,
+          "positivity": 0.3417,
+          "total_recovered": 1490,
+          "total_deaths": 15
         }
       ]
     },
@@ -12453,6 +12541,14 @@
           "positivity": 0.3362,
           "total_recovered": 978,
           "total_deaths": 22
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 6971,
+          "total_cases": 1767,
+          "positivity": 0.3171,
+          "total_recovered": 1002,
+          "total_deaths": 23
         }
       ]
     },
@@ -13490,6 +13586,14 @@
           "total_cases": 2743,
           "positivity": 0.3314,
           "total_recovered": 1578,
+          "total_deaths": 56
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 12186,
+          "total_cases": 2785,
+          "positivity": 0.3409,
+          "total_recovered": 1631,
           "total_deaths": 56
         }
       ]
@@ -14529,6 +14633,14 @@
           "positivity": 0.5079,
           "total_recovered": 252,
           "total_deaths": 5
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 2824,
+          "total_cases": 922,
+          "positivity": 0.5022,
+          "total_recovered": 270,
+          "total_deaths": 5
         }
       ]
     },
@@ -15567,6 +15679,14 @@
           "positivity": 0.6205,
           "total_recovered": 66,
           "total_deaths": 5
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 466,
+          "total_cases": 166,
+          "positivity": 0.5482,
+          "total_recovered": 70,
+          "total_deaths": 6
         }
       ]
     },
@@ -16603,6 +16723,14 @@
           "total_tests": 591,
           "total_cases": 429,
           "positivity": 0.9277,
+          "total_recovered": 118,
+          "total_deaths": 2
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 591,
+          "total_cases": 429,
+          "positivity": 0.9245,
           "total_recovered": 118,
           "total_deaths": 2
         }
@@ -17643,6 +17771,14 @@
           "positivity": 0.3444,
           "total_recovered": 295,
           "total_deaths": 22
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 3460,
+          "total_cases": 789,
+          "positivity": 0.3297,
+          "total_recovered": 309,
+          "total_deaths": 22
         }
       ]
     },
@@ -18681,6 +18817,14 @@
           "positivity": 0.3721,
           "total_recovered": 597,
           "total_deaths": 68
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 4691,
+          "total_cases": 1325,
+          "positivity": 0.3598,
+          "total_recovered": 615,
+          "total_deaths": 70
         }
       ]
     },
@@ -19718,6 +19862,14 @@
           "total_cases": 371,
           "positivity": 0.4028,
           "total_recovered": 291,
+          "total_deaths": 21
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 1462,
+          "total_cases": 372,
+          "positivity": 0.4,
+          "total_recovered": 292,
           "total_deaths": 21
         }
       ]
@@ -20757,6 +20909,14 @@
           "positivity": 0.5799,
           "total_recovered": 100,
           "total_deaths": 2
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 760,
+          "total_cases": 230,
+          "positivity": 0.5611,
+          "total_recovered": 102,
+          "total_deaths": 2
         }
       ]
     },
@@ -21794,6 +21954,14 @@
           "total_cases": 3133,
           "positivity": 0.3743,
           "total_recovered": 2208,
+          "total_deaths": 65
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 10588,
+          "total_cases": 3143,
+          "positivity": 0.3744,
+          "total_recovered": 2227,
           "total_deaths": 65
         }
       ]
@@ -22833,6 +23001,14 @@
           "positivity": 0.3493,
           "total_recovered": 574,
           "total_deaths": 16
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 4749,
+          "total_cases": 1108,
+          "positivity": 0.3394,
+          "total_recovered": 580,
+          "total_deaths": 16
         }
       ]
     },
@@ -23870,6 +24046,14 @@
           "total_cases": 1075,
           "positivity": 0.36,
           "total_recovered": 457,
+          "total_deaths": 19
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 4485,
+          "total_cases": 1089,
+          "positivity": 0.3457,
+          "total_recovered": 474,
           "total_deaths": 19
         }
       ]
@@ -24909,6 +25093,14 @@
           "positivity": 0.4821,
           "total_recovered": 393,
           "total_deaths": 13
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 3162,
+          "total_cases": 1106,
+          "positivity": 0.4785,
+          "total_recovered": 415,
+          "total_deaths": 13
         }
       ]
     },
@@ -25947,6 +26139,14 @@
           "positivity": 0.452,
           "total_recovered": 3212,
           "total_deaths": 167
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 24364,
+          "total_cases": 7936,
+          "positivity": 0.442,
+          "total_recovered": 3329,
+          "total_deaths": 169
         }
       ]
     },
@@ -26985,6 +27185,14 @@
           "positivity": 0.4582,
           "total_recovered": 116,
           "total_deaths": 4
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 903,
+          "total_cases": 302,
+          "positivity": 0.4582,
+          "total_recovered": 116,
+          "total_deaths": 5
         }
       ]
     },
@@ -28023,6 +28231,14 @@
           "positivity": 0.4936,
           "total_recovered": 302,
           "total_deaths": 14
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 1127,
+          "total_cases": 398,
+          "positivity": 0.4765,
+          "total_recovered": 303,
+          "total_deaths": 17
         }
       ]
     },
@@ -29061,6 +29277,14 @@
           "positivity": 0.4109,
           "total_recovered": 466,
           "total_deaths": 15
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 2993,
+          "total_cases": 843,
+          "positivity": 0.4074,
+          "total_recovered": 469,
+          "total_deaths": 16
         }
       ]
     },
@@ -30098,6 +30322,14 @@
           "total_cases": 193,
           "positivity": 0.4977,
           "total_recovered": 103,
+          "total_deaths": 12
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 680,
+          "total_cases": 193,
+          "positivity": 0.4842,
+          "total_recovered": 104,
           "total_deaths": 12
         }
       ]
@@ -31137,6 +31369,14 @@
           "positivity": 0.519,
           "total_recovered": 42,
           "total_deaths": 7
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 331,
+          "total_cases": 128,
+          "positivity": 0.5,
+          "total_recovered": 43,
+          "total_deaths": 7
         }
       ]
     },
@@ -32173,6 +32413,14 @@
           "total_tests": 734,
           "total_cases": 255,
           "positivity": 0.5959,
+          "total_recovered": 119,
+          "total_deaths": 10
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 735,
+          "total_cases": 255,
+          "positivity": 0.5616,
           "total_recovered": 119,
           "total_deaths": 10
         }
@@ -33213,6 +33461,14 @@
           "positivity": 0.3126,
           "total_recovered": 12000,
           "total_deaths": 318
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 68139,
+          "total_cases": 17658,
+          "positivity": 0.3073,
+          "total_recovered": 12256,
+          "total_deaths": 321
         }
       ]
     },
@@ -33847,6 +34103,14 @@
           "total_cases": 4308,
           "positivity": 0.3947,
           "total_recovered": 888,
+          "total_deaths": 0
+        },
+        {
+          "date": "2020/08/09",
+          "total_tests": 11131,
+          "total_cases": 4392,
+          "positivity": 0.3946,
+          "total_recovered": 901,
           "total_deaths": 0
         }
       ]
