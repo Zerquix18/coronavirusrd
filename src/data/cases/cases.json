@@ -1941,6 +1941,17 @@
       "total_discarded": 276160,
       "total_at_the_hospital": 7455,
       "total_at_home": 17468
+    },
+    {
+      "date": "2020/09/01",
+      "total_cases": 94979,
+      "total_deaths": 1738,
+      "new_cases": 264,
+      "new_deaths": 28,
+      "total_recovered": 68736,
+      "total_discarded": 278022,
+      "total_at_the_hospital": 7444,
+      "total_at_home": 17061
     }
   ]
 }
