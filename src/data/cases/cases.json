@@ -1952,6 +1952,17 @@
       "total_discarded": 278022,
       "total_at_the_hospital": 7444,
       "total_at_home": 17061
+    },
+    {
+      "date": "2020/09/02",
+      "total_cases": 95627,
+      "total_deaths": 1765,
+      "new_cases": 648,
+      "new_deaths": 27,
+      "total_recovered": 69519,
+      "total_discarded": 280494,
+      "total_at_the_hospital": 7446,
+      "total_at_home": 16897
     }
   ]
 }
