@@ -1963,6 +1963,17 @@
       "total_discarded": 280494,
       "total_at_the_hospital": 7446,
       "total_at_home": 16897
+    },
+    {
+      "date": "2020/09/03",
+      "total_cases": 96629,
+      "total_deaths": 1801,
+      "new_cases": 1002,
+      "new_deaths": 36,
+      "total_recovered": 70871,
+      "total_discarded": 283300,
+      "total_at_the_hospital": 7518,
+      "total_at_home": 16297
     }
   ]
 }
