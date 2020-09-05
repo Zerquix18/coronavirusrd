@@ -1974,6 +1974,17 @@
       "total_discarded": 283300,
       "total_at_the_hospital": 7518,
       "total_at_home": 16297
+    },
+    {
+      "date": "2020/09/04",
+      "total_cases": 97902,
+      "total_deaths": 1821,
+      "new_cases": 1273,
+      "new_deaths": 1,
+      "total_recovered": 71544,
+      "total_discarded": 288219,
+      "total_at_the_hospital": 8093,
+      "total_at_home": 16444
     }
   ]
 }

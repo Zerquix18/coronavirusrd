@@ -17,7 +17,7 @@ const run = async () => {
   console.log('Starting...');
   try {
     await workOnUpdates();
-    await workOnSex();
+    //await workOnSex();
     await workOnCases();
     await workOnProvinces();
 
