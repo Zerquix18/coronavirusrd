@@ -1985,6 +1985,17 @@
       "total_discarded": 288219,
       "total_at_the_hospital": 8093,
       "total_at_home": 16444
+    },
+    {
+      "date": "2020/09/05",
+      "total_cases": 98766,
+      "total_deaths": 1840,
+      "new_cases": 864,
+      "new_deaths": 0,
+      "total_recovered": 71901,
+      "total_discarded": 292424,
+      "total_at_the_hospital": 8093,
+      "total_at_home": 16444
     }
   ]
 }
