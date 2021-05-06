@@ -17,7 +17,7 @@
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-json": "^2.3.0",
     "gatsby-transformer-sharp": "^2.3.19",
-    "highcharts": "^8.0.4",
+    "highcharts": "^9.0.0",
     "highcharts-react-official": "^3.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
